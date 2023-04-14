@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.coder" plugin-version="R2021a">
-  <configuration build-checksum="2769780266" file="/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Variable Selection/VS_dirac.prj" location="/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Variable Selection" name="VS_dirac" target="target.unifiedcoder" target-name="MATLAB Coder">
+  <configuration build-checksum="4267525036" file="/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Variable Selection/VS_dirac.prj" location="/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Variable Selection" name="VS_dirac" target="target.unifiedcoder" target-name="MATLAB Coder">
     <profile key="profile.mex">
       <param.BuiltInstrumentedMex>false</param.BuiltInstrumentedMex>
       <param.RanInstrumentedMex>false</param.RanInstrumentedMex>
@@ -560,7 +560,7 @@
       </unset>
     </profile>
     <param.objective>option.objective.c</param.objective>
-    <param.WorkflowStep>generateCode</param.WorkflowStep>
+    <param.WorkflowStep>workflowSummary</param.WorkflowStep>
     <param.TestSnippets />
     <param.ExternalFcnMajority>column</param.ExternalFcnMajority>
     <param.UseGlobals>option.UseGlobals.No</param.UseGlobals>
@@ -594,7 +594,7 @@
     <var.cfi.preBuildChecksum />
     <var.outdatedOnRestore>false</var.outdatedOnRestore>
     <var.lastUserSourceChecksum>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;checksum&gt;&lt;includedFiles&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Variable Selection/VS_dirac.m&lt;/file&gt;&lt;/includedFiles&gt;&lt;value&gt;3778382079&lt;/value&gt;&lt;/checksum&gt;</var.lastUserSourceChecksum>
-    <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Variable Selection/VS_dirac.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
+    <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Variable Selection/VS_dirac.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/cols.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/demeanc.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/minresid.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/randDir.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/randgam.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/randig.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/rows.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
     <param.forceMexBuild>false</param.forceMexBuild>
     <param.NoDefaultJIT>false</param.NoDefaultJIT>
     <param.configImportActive>false</param.configImportActive>
@@ -644,8 +644,8 @@
     <param.deeplearning.DeepLearningCustomCallback />
     <param.deeplearning.TargetLib>option.deeplearning.targetlibrary.none</param.deeplearning.TargetLib>
     <var.cfiTargetLibSuppression>false</var.cfiTargetLibSuppression>
-    <var.hasMatlabDeepLearningSupportPackage>false</var.hasMatlabDeepLearningSupportPackage>
-    <var.hasGpuDeepLearningSupportPackage>false</var.hasGpuDeepLearningSupportPackage>
+    <var.hasMatlabDeepLearningSupportPackage>true</var.hasMatlabDeepLearningSupportPackage>
+    <var.hasGpuDeepLearningSupportPackage>true</var.hasGpuDeepLearningSupportPackage>
     <param.tensorrt.DataType>option.tensorrt.datatype.fp32</param.tensorrt.DataType>
     <param.tensorrt.DataPath />
     <param.tensorrt.NumCalibrationBatches>0</param.tensorrt.NumCalibrationBatches>
@@ -782,6 +782,8 @@
       <param.deeplearning.DeepLearningCustomCallback />
       <param.deeplearning.TargetLib />
       <var.cfiTargetLibSuppression />
+      <var.hasMatlabDeepLearningSupportPackage />
+      <var.hasGpuDeepLearningSupportPackage />
       <param.tensorrt.DataType />
       <param.tensorrt.DataPath />
       <param.tensorrt.NumCalibrationBatches />

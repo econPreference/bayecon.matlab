@@ -1,0 +1,230 @@
+[
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  Mixture_Normal_data.c -o build/maci64/Mixture_Normal_data.o",
+    "file": "Mixture_Normal_data.c",
+    "output": "build/maci64/Mixture_Normal_data.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  rt_nonfinite.c -o build/maci64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/maci64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  Mixture_Normal_initialize.c -o build/maci64/Mixture_Normal_initialize.o",
+    "file": "Mixture_Normal_initialize.c",
+    "output": "build/maci64/Mixture_Normal_initialize.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  Mixture_Normal_terminate.c -o build/maci64/Mixture_Normal_terminate.o",
+    "file": "Mixture_Normal_terminate.c",
+    "output": "build/maci64/Mixture_Normal_terminate.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  Mixture_Normal.c -o build/maci64/Mixture_Normal.o",
+    "file": "Mixture_Normal.c",
+    "output": "build/maci64/Mixture_Normal.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  Gen_S.c -o build/maci64/Gen_S.o",
+    "file": "Gen_S.c",
+    "output": "build/maci64/Gen_S.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  repmat.c -o build/maci64/repmat.o",
+    "file": "repmat.c",
+    "output": "build/maci64/repmat.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  mrdivide_helper.c -o build/maci64/mrdivide_helper.o",
+    "file": "mrdivide_helper.c",
+    "output": "build/maci64/mrdivide_helper.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  warning.c -o build/maci64/warning.o",
+    "file": "warning.c",
+    "output": "build/maci64/warning.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  qrsolve.c -o build/maci64/qrsolve.o",
+    "file": "qrsolve.c",
+    "output": "build/maci64/qrsolve.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  sumMatrixIncludeNaN.c -o build/maci64/sumMatrixIncludeNaN.o",
+    "file": "sumMatrixIncludeNaN.c",
+    "output": "build/maci64/sumMatrixIncludeNaN.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  indexShapeCheck.c -o build/maci64/indexShapeCheck.o",
+    "file": "indexShapeCheck.c",
+    "output": "build/maci64/indexShapeCheck.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  rand.c -o build/maci64/rand.o",
+    "file": "rand.c",
+    "output": "build/maci64/rand.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  Gen_beta.c -o build/maci64/Gen_beta.o",
+    "file": "Gen_beta.c",
+    "output": "build/maci64/Gen_beta.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  inv.c -o build/maci64/inv.o",
+    "file": "inv.c",
+    "output": "build/maci64/inv.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  norm.c -o build/maci64/norm.o",
+    "file": "norm.c",
+    "output": "build/maci64/norm.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  diag.c -o build/maci64/diag.o",
+    "file": "diag.c",
+    "output": "build/maci64/diag.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  eye.c -o build/maci64/eye.o",
+    "file": "eye.c",
+    "output": "build/maci64/eye.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  eml_mtimes_helper.c -o build/maci64/eml_mtimes_helper.o",
+    "file": "eml_mtimes_helper.c",
+    "output": "build/maci64/eml_mtimes_helper.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  mtimes.c -o build/maci64/mtimes.o",
+    "file": "mtimes.c",
+    "output": "build/maci64/mtimes.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  randn.c -o build/maci64/randn.o",
+    "file": "randn.c",
+    "output": "build/maci64/randn.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  kron.c -o build/maci64/kron.o",
+    "file": "kron.c",
+    "output": "build/maci64/kron.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  cholmod.c -o build/maci64/cholmod.o",
+    "file": "cholmod.c",
+    "output": "build/maci64/cholmod.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  abs.c -o build/maci64/abs.o",
+    "file": "abs.c",
+    "output": "build/maci64/abs.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  sum.c -o build/maci64/sum.o",
+    "file": "sum.c",
+    "output": "build/maci64/sum.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  error.c -o build/maci64/error.o",
+    "file": "error.c",
+    "output": "build/maci64/error.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  interface/_coder_Mixture_Normal_api.c -o build/maci64/_coder_Mixture_Normal_api.o",
+    "file": "interface/_coder_Mixture_Normal_api.c",
+    "output": "build/maci64/_coder_Mixture_Normal_api.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  interface/_coder_Mixture_Normal_mex.c -o build/maci64/_coder_Mixture_Normal_mex.o",
+    "file": "interface/_coder_Mixture_Normal_mex.c",
+    "output": "build/maci64/_coder_Mixture_Normal_mex.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  eml_int_forloop_overflow_check.c -o build/maci64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.c",
+    "output": "build/maci64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  xgetrf.c -o build/maci64/xgetrf.o",
+    "file": "xgetrf.c",
+    "output": "build/maci64/xgetrf.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  vec.c -o build/maci64/vec.o",
+    "file": "vec.c",
+    "output": "build/maci64/vec.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  Gen_Omega.c -o build/maci64/Gen_Omega.o",
+    "file": "Gen_Omega.c",
+    "output": "build/maci64/Gen_Omega.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  lnpdfmvn.c -o build/maci64/lnpdfmvn.o",
+    "file": "lnpdfmvn.c",
+    "output": "build/maci64/lnpdfmvn.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  discret1.c -o build/maci64/discret1.o",
+    "file": "discret1.c",
+    "output": "build/maci64/discret1.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  Mixture_Normal_emxutil.c -o build/maci64/Mixture_Normal_emxutil.o",
+    "file": "Mixture_Normal_emxutil.c",
+    "output": "build/maci64/Mixture_Normal_emxutil.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  Mixture_Normal_mexutil.c -o build/maci64/Mixture_Normal_mexutil.o",
+    "file": "Mixture_Normal_mexutil.c",
+    "output": "build/maci64/Mixture_Normal_mexutil.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  interface/_coder_Mixture_Normal_info.c -o build/maci64/_coder_Mixture_Normal_info.o",
+    "file": "interface/_coder_Mixture_Normal_info.c",
+    "output": "build/maci64/_coder_Mixture_Normal_info.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal/codegen/mex/Mixture_Normal",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c  /Applications/MATLAB_R2021b.app/extern/version/c_mexapi_version.c -o build/maci64/c_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2021b.app/extern/version/c_mexapi_version.c",
+    "output": "build/maci64/c_mexapi_version.o"
+  }
+]

@@ -1,0 +1,51 @@
+# CompilerName=clang
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/maci64
+matlabdir = /Applications/MATLAB_R2021b.app
+startdir = /Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series
+
+# Toolchain information
+cc = /usr/bin/xcrun -sdk macosx12.1 clang
+cxx = /usr/bin/xcrun -sdk macosx12.1 clang++
+linker = /usr/bin/xcrun -sdk macosx12.1 clang
+linkerxx = /usr/bin/xcrun -sdk macosx12.1 clang++
+
+cflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c99 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c 
+
+cxxflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c 
+
+ldflags =  -Wl,-twolevel_namespace -undefined error -arch x86_64 -mmacosx-version-min=10.15 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -framework Cocoa -bundle  -stdlib=libc++ -L"$matlabdir/bin/maci64" -lmx -lmex -lmat -L"$matlabdir/extern/bin/maci64" -lMatlabDataArray -lMatlabEngine  -Wl,-rpath,@loader_path -o obj_mex.mexmaci64 -L"$matlabdir/bin/maci64" -lmwlapack -lmwblas -lemlrt -lcovrt -lut -lmwmathutil 
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker $in $ldflags
+
+rule linkxx
+    command = $linkerxx $in $ldflags
+
+# Build
+build $builddir/obj_data.o : cxx $root/obj_data.cpp
+build $builddir/rt_nonfinite.o : cxx $root/rt_nonfinite.cpp
+build $builddir/obj_initialize.o : cxx $root/obj_initialize.cpp
+build $builddir/obj_terminate.o : cxx $root/obj_terminate.cpp
+build $builddir/obj.o : cxx $root/obj.cpp
+build $builddir/mldivide.o : cxx $root/mldivide.cpp
+build $builddir/warning.o : cxx $root/warning.cpp
+build $builddir/_coder_obj_api.o : cxx $root/interface/_coder_obj_api.cpp
+build $builddir/_coder_obj_mex.o : cxx $root/interface/_coder_obj_mex.cpp
+build $builddir/obj_mexutil.o : cxx $root/obj_mexutil.cpp
+build $builddir/_coder_obj_info.o : cxx $root/interface/_coder_obj_info.cpp
+build $builddir/cpp_mexapi_version.o : cxx $matlabdir/extern/version/cpp_mexapi_version.cpp
+
+# Link
+build $root/obj_mex.mexmaci64 : linkxx $builddir/obj_data.o $builddir/rt_nonfinite.o $builddir/obj_initialize.o $builddir/obj_terminate.o $builddir/obj.o $builddir/mldivide.o $builddir/warning.o $builddir/_coder_obj_api.o $builddir/_coder_obj_mex.o $builddir/obj_mexutil.o $builddir/_coder_obj_info.o $builddir/cpp_mexapi_version.o 

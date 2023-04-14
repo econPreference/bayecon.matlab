@@ -1,0 +1,64 @@
+# CompilerName=clang
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/maci64
+matlabdir = /Applications/MATLAB_R2021b.app
+startdir = /Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection
+
+# Toolchain information
+cc = /usr/bin/xcrun -sdk macosx12.1 clang
+cxx = /usr/bin/xcrun -sdk macosx12.1 clang++
+linker = /usr/bin/xcrun -sdk macosx12.1 clang
+linkerxx = /usr/bin/xcrun -sdk macosx12.1 clang++
+
+cflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Vari_Selection_mex -c 
+
+cxxflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Vari_Selection_mex -c 
+
+ldflags =  -Wl,-twolevel_namespace -undefined error -arch x86_64 -mmacosx-version-min=10.15 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -bundle   -L"$matlabdir/bin/maci64" -lmx -lmex -lmat -lc++  -Wl,-rpath,@loader_path -o Vari_Selection_mex.mexmaci64 -L"$matlabdir/bin/maci64" -lmwblas -lmwlapack -lemlrt -lcovrt -lut -lmwmathutil  -Wl,-exported_symbols_list,Vari_Selection_mex.map
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker $in $ldflags
+
+rule linkxx
+    command = $linkerxx $in $ldflags
+
+# Build
+build $builddir/Vari_Selection_data.o : cc $root/Vari_Selection_data.c
+build $builddir/rt_nonfinite.o : cc $root/rt_nonfinite.c
+build $builddir/Vari_Selection_initialize.o : cc $root/Vari_Selection_initialize.c
+build $builddir/Vari_Selection_terminate.o : cc $root/Vari_Selection_terminate.c
+build $builddir/Vari_Selection.o : cc $root/Vari_Selection.c
+build $builddir/std.o : cc $root/std.c
+build $builddir/sumMatrixIncludeNaN.o : cc $root/sumMatrixIncludeNaN.c
+build $builddir/eye.o : cc $root/eye.c
+build $builddir/diag.o : cc $root/diag.c
+build $builddir/eml_mtimes_helper.o : cc $root/eml_mtimes_helper.c
+build $builddir/mtimes.o : cc $root/mtimes.c
+build $builddir/warning.o : cc $root/warning.c
+build $builddir/inv.o : cc $root/inv.c
+build $builddir/norm.o : cc $root/norm.c
+build $builddir/randn.o : cc $root/randn.c
+build $builddir/gamrnd.o : cc $root/gamrnd.c
+build $builddir/rand.o : cc $root/rand.c
+build $builddir/_coder_Vari_Selection_api.o : cc $root/interface/_coder_Vari_Selection_api.c
+build $builddir/_coder_Vari_Selection_mex.o : cc $root/interface/_coder_Vari_Selection_mex.c
+build $builddir/eml_int_forloop_overflow_check.o : cc $root/eml_int_forloop_overflow_check.c
+build $builddir/chol.o : cc $root/chol.c
+build $builddir/Vari_Selection_emxutil.o : cc $root/Vari_Selection_emxutil.c
+build $builddir/Vari_Selection_mexutil.o : cc $root/Vari_Selection_mexutil.c
+build $builddir/_coder_Vari_Selection_info.o : cc $root/interface/_coder_Vari_Selection_info.c
+build $builddir/c_mexapi_version.o : cc $matlabdir/extern/version/c_mexapi_version.c
+
+# Link
+build $root/Vari_Selection_mex.mexmaci64 : link $builddir/Vari_Selection_data.o $builddir/rt_nonfinite.o $builddir/Vari_Selection_initialize.o $builddir/Vari_Selection_terminate.o $builddir/Vari_Selection.o $builddir/std.o $builddir/sumMatrixIncludeNaN.o $builddir/eye.o $builddir/diag.o $builddir/eml_mtimes_helper.o $builddir/mtimes.o $builddir/warning.o $builddir/inv.o $builddir/norm.o $builddir/randn.o $builddir/gamrnd.o $builddir/rand.o $builddir/_coder_Vari_Selection_api.o $builddir/_coder_Vari_Selection_mex.o $builddir/eml_int_forloop_overflow_check.o $builddir/chol.o $builddir/Vari_Selection_emxutil.o $builddir/Vari_Selection_mexutil.o $builddir/_coder_Vari_Selection_info.o $builddir/c_mexapi_version.o 

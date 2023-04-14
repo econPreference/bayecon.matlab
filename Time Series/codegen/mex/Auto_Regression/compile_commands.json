@@ -1,0 +1,302 @@
+[
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  Auto_Regression_data.c -o build/maci64/Auto_Regression_data.o",
+    "file": "Auto_Regression_data.c",
+    "output": "build/maci64/Auto_Regression_data.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  rt_nonfinite.c -o build/maci64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/maci64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  Auto_Regression_initialize.c -o build/maci64/Auto_Regression_initialize.o",
+    "file": "Auto_Regression_initialize.c",
+    "output": "build/maci64/Auto_Regression_initialize.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  Auto_Regression_terminate.c -o build/maci64/Auto_Regression_terminate.o",
+    "file": "Auto_Regression_terminate.c",
+    "output": "build/maci64/Auto_Regression_terminate.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  Auto_Regression.c -o build/maci64/Auto_Regression.o",
+    "file": "Auto_Regression.c",
+    "output": "build/maci64/Auto_Regression.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  invpd.c -o build/maci64/invpd.o",
+    "file": "invpd.c",
+    "output": "build/maci64/invpd.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  cholmod.c -o build/maci64/cholmod.o",
+    "file": "cholmod.c",
+    "output": "build/maci64/cholmod.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  abs.c -o build/maci64/abs.o",
+    "file": "abs.c",
+    "output": "build/maci64/abs.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  sum.c -o build/maci64/sum.o",
+    "file": "sum.c",
+    "output": "build/maci64/sum.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  combineVectorElements.c -o build/maci64/combineVectorElements.o",
+    "file": "combineVectorElements.c",
+    "output": "build/maci64/combineVectorElements.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  sumMatrixIncludeNaN.c -o build/maci64/sumMatrixIncludeNaN.o",
+    "file": "sumMatrixIncludeNaN.c",
+    "output": "build/maci64/sumMatrixIncludeNaN.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  error.c -o build/maci64/error.o",
+    "file": "error.c",
+    "output": "build/maci64/error.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  diag.c -o build/maci64/diag.o",
+    "file": "diag.c",
+    "output": "build/maci64/diag.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  eye.c -o build/maci64/eye.o",
+    "file": "eye.c",
+    "output": "build/maci64/eye.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  assertValidSizeArg.c -o build/maci64/assertValidSizeArg.o",
+    "file": "assertValidSizeArg.c",
+    "output": "build/maci64/assertValidSizeArg.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  eml_mtimes_helper.c -o build/maci64/eml_mtimes_helper.o",
+    "file": "eml_mtimes_helper.c",
+    "output": "build/maci64/eml_mtimes_helper.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  mtimes.c -o build/maci64/mtimes.o",
+    "file": "mtimes.c",
+    "output": "build/maci64/mtimes.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  std.c -o build/maci64/std.o",
+    "file": "std.c",
+    "output": "build/maci64/std.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  mpower.c -o build/maci64/mpower.o",
+    "file": "mpower.c",
+    "output": "build/maci64/mpower.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  mrdivide_helper.c -o build/maci64/mrdivide_helper.o",
+    "file": "mrdivide_helper.c",
+    "output": "build/maci64/mrdivide_helper.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  warning.c -o build/maci64/warning.o",
+    "file": "warning.c",
+    "output": "build/maci64/warning.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  infocheck.c -o build/maci64/infocheck.o",
+    "file": "infocheck.c",
+    "output": "build/maci64/infocheck.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  kron.c -o build/maci64/kron.o",
+    "file": "kron.c",
+    "output": "build/maci64/kron.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  inv.c -o build/maci64/inv.o",
+    "file": "inv.c",
+    "output": "build/maci64/inv.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  repmat.c -o build/maci64/repmat.o",
+    "file": "repmat.c",
+    "output": "build/maci64/repmat.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  norm.c -o build/maci64/norm.o",
+    "file": "norm.c",
+    "output": "build/maci64/norm.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  randn.c -o build/maci64/randn.o",
+    "file": "randn.c",
+    "output": "build/maci64/randn.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  rand.c -o build/maci64/rand.o",
+    "file": "rand.c",
+    "output": "build/maci64/rand.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  eig.c -o build/maci64/eig.o",
+    "file": "eig.c",
+    "output": "build/maci64/eig.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  anyNonFinite.c -o build/maci64/anyNonFinite.o",
+    "file": "anyNonFinite.c",
+    "output": "build/maci64/anyNonFinite.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  power.c -o build/maci64/power.o",
+    "file": "power.c",
+    "output": "build/maci64/power.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  det.c -o build/maci64/det.o",
+    "file": "det.c",
+    "output": "build/maci64/det.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  lnpdfmvn.c -o build/maci64/lnpdfmvn.o",
+    "file": "lnpdfmvn.c",
+    "output": "build/maci64/lnpdfmvn.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  qrsolve.c -o build/maci64/qrsolve.o",
+    "file": "qrsolve.c",
+    "output": "build/maci64/qrsolve.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  lnpdfig.c -o build/maci64/lnpdfig.o",
+    "file": "lnpdfig.c",
+    "output": "build/maci64/lnpdfig.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  indexShapeCheck.c -o build/maci64/indexShapeCheck.o",
+    "file": "indexShapeCheck.c",
+    "output": "build/maci64/indexShapeCheck.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  mean.c -o build/maci64/mean.o",
+    "file": "mean.c",
+    "output": "build/maci64/mean.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  cov.c -o build/maci64/cov.o",
+    "file": "cov.c",
+    "output": "build/maci64/cov.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  interface/_coder_Auto_Regression_api.c -o build/maci64/_coder_Auto_Regression_api.o",
+    "file": "interface/_coder_Auto_Regression_api.c",
+    "output": "build/maci64/_coder_Auto_Regression_api.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  interface/_coder_Auto_Regression_mex.c -o build/maci64/_coder_Auto_Regression_mex.o",
+    "file": "interface/_coder_Auto_Regression_mex.c",
+    "output": "build/maci64/_coder_Auto_Regression_mex.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  eml_int_forloop_overflow_check.c -o build/maci64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.c",
+    "output": "build/maci64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  xgetrf.c -o build/maci64/xgetrf.o",
+    "file": "xgetrf.c",
+    "output": "build/maci64/xgetrf.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  vec.c -o build/maci64/vec.o",
+    "file": "vec.c",
+    "output": "build/maci64/vec.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  chol.c -o build/maci64/chol.o",
+    "file": "chol.c",
+    "output": "build/maci64/chol.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  schur.c -o build/maci64/schur.o",
+    "file": "schur.c",
+    "output": "build/maci64/schur.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  sqrt.c -o build/maci64/sqrt.o",
+    "file": "sqrt.c",
+    "output": "build/maci64/sqrt.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  Auto_Regression_emxutil.c -o build/maci64/Auto_Regression_emxutil.o",
+    "file": "Auto_Regression_emxutil.c",
+    "output": "build/maci64/Auto_Regression_emxutil.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  Auto_Regression_mexutil.c -o build/maci64/Auto_Regression_mexutil.o",
+    "file": "Auto_Regression_mexutil.c",
+    "output": "build/maci64/Auto_Regression_mexutil.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  interface/_coder_Auto_Regression_info.c -o build/maci64/_coder_Auto_Regression_info.o",
+    "file": "interface/_coder_Auto_Regression_info.c",
+    "output": "build/maci64/_coder_Auto_Regression_info.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/Auto_Regression",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Auto_Regression_mex -c  /Applications/MATLAB_R2021b.app/extern/version/c_mexapi_version.c -o build/maci64/c_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2021b.app/extern/version/c_mexapi_version.c",
+    "output": "build/maci64/c_mexapi_version.o"
+  }
+]

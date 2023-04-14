@@ -1,0 +1,74 @@
+[
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  obj_data.cpp -o build/maci64/obj_data.o",
+    "file": "obj_data.cpp",
+    "output": "build/maci64/obj_data.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  rt_nonfinite.cpp -o build/maci64/rt_nonfinite.o",
+    "file": "rt_nonfinite.cpp",
+    "output": "build/maci64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  obj_initialize.cpp -o build/maci64/obj_initialize.o",
+    "file": "obj_initialize.cpp",
+    "output": "build/maci64/obj_initialize.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  obj_terminate.cpp -o build/maci64/obj_terminate.o",
+    "file": "obj_terminate.cpp",
+    "output": "build/maci64/obj_terminate.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  obj.cpp -o build/maci64/obj.o",
+    "file": "obj.cpp",
+    "output": "build/maci64/obj.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  mldivide.cpp -o build/maci64/mldivide.o",
+    "file": "mldivide.cpp",
+    "output": "build/maci64/mldivide.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  warning.cpp -o build/maci64/warning.o",
+    "file": "warning.cpp",
+    "output": "build/maci64/warning.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_obj_api.cpp -o build/maci64/_coder_obj_api.o",
+    "file": "interface/_coder_obj_api.cpp",
+    "output": "build/maci64/_coder_obj_api.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_obj_mex.cpp -o build/maci64/_coder_obj_mex.o",
+    "file": "interface/_coder_obj_mex.cpp",
+    "output": "build/maci64/_coder_obj_mex.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  obj_mexutil.cpp -o build/maci64/obj_mexutil.o",
+    "file": "obj_mexutil.cpp",
+    "output": "build/maci64/obj_mexutil.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_obj_info.cpp -o build/maci64/_coder_obj_info.o",
+    "file": "interface/_coder_obj_info.cpp",
+    "output": "build/maci64/_coder_obj_info.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series/codegen/mex/obj",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Time Series\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=obj_mex -DMW_NEEDS_VERSION_H -c  /Applications/MATLAB_R2021b.app/extern/version/cpp_mexapi_version.cpp -o build/maci64/cpp_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2021b.app/extern/version/cpp_mexapi_version.cpp",
+    "output": "build/maci64/cpp_mexapi_version.o"
+  }
+]

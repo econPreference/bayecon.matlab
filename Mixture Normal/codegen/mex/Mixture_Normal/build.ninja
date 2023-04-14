@@ -1,0 +1,77 @@
+# CompilerName=clang
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/maci64
+matlabdir = /Applications/MATLAB_R2021b.app
+startdir = /Users/preference/Dropbox/code/MATLAB/Bayecon/Mixture Normal
+
+# Toolchain information
+cc = /usr/bin/xcrun -sdk macosx12.1 clang
+cxx = /usr/bin/xcrun -sdk macosx12.1 clang++
+linker = /usr/bin/xcrun -sdk macosx12.1 clang
+linkerxx = /usr/bin/xcrun -sdk macosx12.1 clang++
+
+cflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c 
+
+cxxflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fobjc-arc -std=c++11 -stdlib=libc++ -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=Mixture_Normal_mex -c 
+
+ldflags =  -Wl,-twolevel_namespace -undefined error -arch x86_64 -mmacosx-version-min=10.15 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -bundle   -L"$matlabdir/bin/maci64" -lmx -lmex -lmat -lc++  -Wl,-rpath,@loader_path -o Mixture_Normal_mex.mexmaci64 -L"$matlabdir/bin/maci64" -lmwlapack -lmwblas -lemlrt -lcovrt -lut -lmwmathutil  -Wl,-exported_symbols_list,Mixture_Normal_mex.map
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker $in $ldflags
+
+rule linkxx
+    command = $linkerxx $in $ldflags
+
+# Build
+build $builddir/Mixture_Normal_data.o : cc $root/Mixture_Normal_data.c
+build $builddir/rt_nonfinite.o : cc $root/rt_nonfinite.c
+build $builddir/Mixture_Normal_initialize.o : cc $root/Mixture_Normal_initialize.c
+build $builddir/Mixture_Normal_terminate.o : cc $root/Mixture_Normal_terminate.c
+build $builddir/Mixture_Normal.o : cc $root/Mixture_Normal.c
+build $builddir/Gen_S.o : cc $root/Gen_S.c
+build $builddir/repmat.o : cc $root/repmat.c
+build $builddir/mrdivide_helper.o : cc $root/mrdivide_helper.c
+build $builddir/warning.o : cc $root/warning.c
+build $builddir/qrsolve.o : cc $root/qrsolve.c
+build $builddir/sumMatrixIncludeNaN.o : cc $root/sumMatrixIncludeNaN.c
+build $builddir/indexShapeCheck.o : cc $root/indexShapeCheck.c
+build $builddir/rand.o : cc $root/rand.c
+build $builddir/Gen_beta.o : cc $root/Gen_beta.c
+build $builddir/inv.o : cc $root/inv.c
+build $builddir/norm.o : cc $root/norm.c
+build $builddir/diag.o : cc $root/diag.c
+build $builddir/eye.o : cc $root/eye.c
+build $builddir/eml_mtimes_helper.o : cc $root/eml_mtimes_helper.c
+build $builddir/mtimes.o : cc $root/mtimes.c
+build $builddir/randn.o : cc $root/randn.c
+build $builddir/kron.o : cc $root/kron.c
+build $builddir/cholmod.o : cc $root/cholmod.c
+build $builddir/abs.o : cc $root/abs.c
+build $builddir/sum.o : cc $root/sum.c
+build $builddir/error.o : cc $root/error.c
+build $builddir/_coder_Mixture_Normal_api.o : cc $root/interface/_coder_Mixture_Normal_api.c
+build $builddir/_coder_Mixture_Normal_mex.o : cc $root/interface/_coder_Mixture_Normal_mex.c
+build $builddir/eml_int_forloop_overflow_check.o : cc $root/eml_int_forloop_overflow_check.c
+build $builddir/xgetrf.o : cc $root/xgetrf.c
+build $builddir/vec.o : cc $root/vec.c
+build $builddir/Gen_Omega.o : cc $root/Gen_Omega.c
+build $builddir/lnpdfmvn.o : cc $root/lnpdfmvn.c
+build $builddir/discret1.o : cc $root/discret1.c
+build $builddir/Mixture_Normal_emxutil.o : cc $root/Mixture_Normal_emxutil.c
+build $builddir/Mixture_Normal_mexutil.o : cc $root/Mixture_Normal_mexutil.c
+build $builddir/_coder_Mixture_Normal_info.o : cc $root/interface/_coder_Mixture_Normal_info.c
+build $builddir/c_mexapi_version.o : cc $matlabdir/extern/version/c_mexapi_version.c
+
+# Link
+build $root/Mixture_Normal_mex.mexmaci64 : link $builddir/Mixture_Normal_data.o $builddir/rt_nonfinite.o $builddir/Mixture_Normal_initialize.o $builddir/Mixture_Normal_terminate.o $builddir/Mixture_Normal.o $builddir/Gen_S.o $builddir/repmat.o $builddir/mrdivide_helper.o $builddir/warning.o $builddir/qrsolve.o $builddir/sumMatrixIncludeNaN.o $builddir/indexShapeCheck.o $builddir/rand.o $builddir/Gen_beta.o $builddir/inv.o $builddir/norm.o $builddir/diag.o $builddir/eye.o $builddir/eml_mtimes_helper.o $builddir/mtimes.o $builddir/randn.o $builddir/kron.o $builddir/cholmod.o $builddir/abs.o $builddir/sum.o $builddir/error.o $builddir/_coder_Mixture_Normal_api.o $builddir/_coder_Mixture_Normal_mex.o $builddir/eml_int_forloop_overflow_check.o $builddir/xgetrf.o $builddir/vec.o $builddir/Gen_Omega.o $builddir/lnpdfmvn.o $builddir/discret1.o $builddir/Mixture_Normal_emxutil.o $builddir/Mixture_Normal_mexutil.o $builddir/_coder_Mixture_Normal_info.o $builddir/c_mexapi_version.o 

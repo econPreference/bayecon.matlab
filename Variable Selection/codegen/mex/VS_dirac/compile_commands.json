@@ -1,0 +1,200 @@
+[
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  VS_dirac_data.c -o build/maci64/VS_dirac_data.o",
+    "file": "VS_dirac_data.c",
+    "output": "build/maci64/VS_dirac_data.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  rt_nonfinite.c -o build/maci64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/maci64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  VS_dirac_initialize.c -o build/maci64/VS_dirac_initialize.o",
+    "file": "VS_dirac_initialize.c",
+    "output": "build/maci64/VS_dirac_initialize.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  VS_dirac_terminate.c -o build/maci64/VS_dirac_terminate.o",
+    "file": "VS_dirac_terminate.c",
+    "output": "build/maci64/VS_dirac_terminate.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  VS_dirac.c -o build/maci64/VS_dirac.o",
+    "file": "VS_dirac.c",
+    "output": "build/maci64/VS_dirac.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  std.c -o build/maci64/std.o",
+    "file": "std.c",
+    "output": "build/maci64/std.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  blockedSummation.c -o build/maci64/blockedSummation.o",
+    "file": "blockedSummation.c",
+    "output": "build/maci64/blockedSummation.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  sumMatrixIncludeNaN.c -o build/maci64/sumMatrixIncludeNaN.o",
+    "file": "sumMatrixIncludeNaN.c",
+    "output": "build/maci64/sumMatrixIncludeNaN.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  sum.c -o build/maci64/sum.o",
+    "file": "sum.c",
+    "output": "build/maci64/sum.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  randg.c -o build/maci64/randg.o",
+    "file": "randg.c",
+    "output": "build/maci64/randg.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  rand.c -o build/maci64/rand.o",
+    "file": "rand.c",
+    "output": "build/maci64/rand.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  mpower.c -o build/maci64/mpower.o",
+    "file": "mpower.c",
+    "output": "build/maci64/mpower.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  randn.c -o build/maci64/randn.o",
+    "file": "randn.c",
+    "output": "build/maci64/randn.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  warning.c -o build/maci64/warning.o",
+    "file": "warning.c",
+    "output": "build/maci64/warning.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  mean.c -o build/maci64/mean.o",
+    "file": "mean.c",
+    "output": "build/maci64/mean.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  find.c -o build/maci64/find.o",
+    "file": "find.c",
+    "output": "build/maci64/find.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  indexShapeCheck.c -o build/maci64/indexShapeCheck.o",
+    "file": "indexShapeCheck.c",
+    "output": "build/maci64/indexShapeCheck.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  eml_mtimes_helper.c -o build/maci64/eml_mtimes_helper.o",
+    "file": "eml_mtimes_helper.c",
+    "output": "build/maci64/eml_mtimes_helper.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  mtimes.c -o build/maci64/mtimes.o",
+    "file": "mtimes.c",
+    "output": "build/maci64/mtimes.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  inv.c -o build/maci64/inv.o",
+    "file": "inv.c",
+    "output": "build/maci64/inv.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  repmat.c -o build/maci64/repmat.o",
+    "file": "repmat.c",
+    "output": "build/maci64/repmat.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  norm.c -o build/maci64/norm.o",
+    "file": "norm.c",
+    "output": "build/maci64/norm.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  mrdivide_helper.c -o build/maci64/mrdivide_helper.o",
+    "file": "mrdivide_helper.c",
+    "output": "build/maci64/mrdivide_helper.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  qrsolve.c -o build/maci64/qrsolve.o",
+    "file": "qrsolve.c",
+    "output": "build/maci64/qrsolve.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  gamrnd.c -o build/maci64/gamrnd.o",
+    "file": "gamrnd.c",
+    "output": "build/maci64/gamrnd.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  interface/_coder_VS_dirac_api.c -o build/maci64/_coder_VS_dirac_api.o",
+    "file": "interface/_coder_VS_dirac_api.c",
+    "output": "build/maci64/_coder_VS_dirac_api.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  interface/_coder_VS_dirac_mex.c -o build/maci64/_coder_VS_dirac_mex.o",
+    "file": "interface/_coder_VS_dirac_mex.c",
+    "output": "build/maci64/_coder_VS_dirac_mex.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  eml_int_forloop_overflow_check.c -o build/maci64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.c",
+    "output": "build/maci64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  chol.c -o build/maci64/chol.o",
+    "file": "chol.c",
+    "output": "build/maci64/chol.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  VS_dirac_emxutil.c -o build/maci64/VS_dirac_emxutil.o",
+    "file": "VS_dirac_emxutil.c",
+    "output": "build/maci64/VS_dirac_emxutil.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  VS_dirac_mexutil.c -o build/maci64/VS_dirac_mexutil.o",
+    "file": "VS_dirac_mexutil.c",
+    "output": "build/maci64/VS_dirac_mexutil.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  interface/_coder_VS_dirac_info.c -o build/maci64/_coder_VS_dirac_info.o",
+    "file": "interface/_coder_VS_dirac_info.c",
+    "output": "build/maci64/_coder_VS_dirac_info.o"
+  },
+  {
+    "directory": "/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection/codegen/mex/VS_dirac",
+    "command": "/usr/bin/xcrun -sdk macosx12.1 clang -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/preference/Dropbox/code/MATLAB/Bayecon/Variable Selection\" -I \"./interface\" -I \"/Applications/MATLAB_R2021b.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=VS_dirac_mex -c  /Applications/MATLAB_R2021b.app/extern/version/c_mexapi_version.c -o build/maci64/c_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2021b.app/extern/version/c_mexapi_version.c",
+    "output": "build/maci64/c_mexapi_version.o"
+  }
+]

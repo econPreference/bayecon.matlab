@@ -1,0 +1,15 @@
+# Make settings for Unobserved_Component_Model 
+COMPILER=lcc 
+COMPFLAGS=-c -noregistrylookup -DMX_COMPAT_32  -DMATLAB_MEX_FILE -I"D:\MATLAB\R2015b\sys\lcc\include" -I"D:\MATLAB\R2015b\extern\include" -I"D:\MATLAB\R2015b\simulink\include" -I"D:\MATLAB\R2015b\sys\lcc\mex"   
+OPTIMFLAGS= -DNDEBUG 
+DEBUGFLAGS=-g4 
+LINKER="D:\MATLAB\R2015b\sys\lcc\bin\lcclnk" 
+LINKFLAGS= -dll "D:\MATLAB\R2015b\extern\lib\win32\lcc\mexFunction.def" -L"D:\MATLAB\R2015b\sys\lcc\lib" -libpath "D:\MATLAB\R2015b\extern\lib\win32\lcc" -libpath "D:\MATLAB\R2015b\lib\win32" "Unobserved_Component_Model_mex2.obj"
+LINKOPTIMFLAGS=
+LINKDEBUGFLAGS=
+MATLAB_ARCH=win32
+BORLAND=
+OMPFLAGS= 
+OMPLINKFLAGS= 
+EMC_COMPILER=lcc
+EMC_CONFIG=optim

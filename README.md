@@ -1,6 +1,6 @@
 # Bayecon-Matlab toolkit
 
-This is a **Baye**sian **Econ**ometrics toolkit that is very convenient to use. It has a lot of standard econometrics models:
+This is a <u>Baye</u>sian <u>Econ</u>ometrics toolkit that is very convenient to use. It has a lot of standard econometrics models:
 
 - Linear Regression
   1. Ordinary Least Squares
@@ -36,14 +36,14 @@ Just download the whole package files and add the path of its folder in Matlab.
 Just type
 
 ```Matlab
-output = bayecon(data)
+results = bayecon(data)
 ```
 
 in REPL (or in a script). That's all! When you type it, you will naturally realize how to use it.
 
-Input "data" is a matrix in which each column has observations of a variable. The order of variables is not matter. Bayecon will reorder it as you want.
+Input "data" is a matrix in which each column has observations of a variable (each variable is a column vector). The order of variables is not matter. Bayecon will reorder it as you want.
 
-Output "output" is a struct that contains the results of an analysis.
+Output "results" is a struct that contains the results of an analysis.
 
 ## Compiling (mex file)
 

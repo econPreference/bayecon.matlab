@@ -1,5 +1,5 @@
-.bak
-.mat
-.zip
-/codegen
-.prj
+*.bak
+*.mat
+*.zip
+codegen/
+*.prj

@@ -35,7 +35,7 @@ Just download the whole package files and add the path of its folder in Matlab.
 
 Just type
 
-```Matlab
+```matlab
 results = bayecon(data)
 ```
 

@@ -1,4 +1,4 @@
-# Bayecon-Matlab toolkit
+# bayecon.matlab toolkit
 
 This is a <u>Baye</u>sian <u>Econ</u>ometrics toolkit that is very convenient to use. It has a lot of standard econometrics models:
 

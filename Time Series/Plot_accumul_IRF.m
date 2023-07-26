@@ -4,13 +4,13 @@ function Plot_accumul_IRF(ImpulseRespm,postmom_B)
 % k2 = 길쭉하게 쌓았으니 k^2, mlag1 = mlag + 1 (0 시차도 포함)
 
 k = sqrt(k2);
-ql = [0.025;0.5;0.975]; % 95% 신뢰구간
+ql = [0.16;0.5;0.84]; % 95% 신뢰구간
 xa = 0:(mlag1-1);
 
 a = 1:k2;
 a = reshape(a, k, k);
 
-figure('Name','Accumulated Impulse-Response Analysis([2.5%, 50%, 97.5%])');
+figure('Name','Accumulated Impulse-Response Analysis([16%, 50%, 84%])');
 zeroline = zeros(mlag1,1);
 
 

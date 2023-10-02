@@ -52,3 +52,22 @@ Most models in the package are mex-files. I check that every mex-file model has 
 1. Compile a new mex file using the corresponding \*.prj file. All mex file model has their prj file that is completed.
 
 2. In the script where the compatibility error occurs, erase "\_mex" from the function name in my script (for example, modify "output=function_name_mex(input)" to "output=function_name(input)")
+
+## Citation
+
+If you want to cite my package, please cite
+
+```bibtex
+@software{Lee_Bayecon_Bayesian_Econometrics_2023,
+author = {Lee, Sun Ho},
+month = apr,
+title = {{Bayecon: Bayesian Econometrics package}},
+url = {https://github.com/econPreference/bayecon.matlab},
+version = {1.0.0},
+year = {2023}
+}
+```
+
+or
+
+> Lee, S. H. (2023), “Bayecon: Bayesian econometrics package.”

@@ -62,7 +62,7 @@ Then, execute the package with
 
 in REPL(or script). Then, in the command window, the below things are displayed.
 
-```matlab
+```
   /////////////////////////////////////////////
   ////////Bayesian Econometrics ToolBox////////
   /////////////////////////////////////////////
@@ -81,7 +81,7 @@ in REPL(or script). Then, in the command window, the below things are displayed.
 
 Type `1` in REPL and press enter. Then,
 
-```matlab
+```
   /////////////////////////////////////////////
   ////////Bayesian Econometrics ToolBox////////
   /////////////////////////////////////////////
@@ -99,7 +99,7 @@ Type `1` in REPL and press enter. Then,
 
 is displayed. Type `2` in REPL and press enter. The displayed output is
 
-```matlab
+```
   =============================================
   Model: Bayesian Linear Regression
   =============================================
@@ -121,7 +121,7 @@ is displayed. Type `2` in REPL and press enter. The displayed output is
 
 It is a description of my Bayesian linear regression model. See the last line. Since our dependent variable is in the first column of `data`, type `1` in REPL and press enter. The next question is
 
-```matlab
+```
   Enter the Hyper-parameter according to the following form.
 
   b0: 2 by 1 =
@@ -129,19 +129,19 @@ It is a description of my Bayesian linear regression model. See the last line. S
 
 As shown in the model description, `b0` is a prior mean. In the display, `b0: 2 by 1` means that `b0` should be a 2 by 1 array. My default value `zeros(2, 1)`, so type it in REPL. Then, the next thing is
 
-```matlab
+```
   B0: 2 by 2 =
 ```
 
 In this case, `B0`(prior variance) is a 2 by 2 array. Type it based on your prior belief. Similarly, the package will ask you to type `a0` and `b0`. Since `a0` and `b0` are scalars, just type corresponding double type numbers. For example, I can type
 
-```matlab
+```
   a0: scalar = 4
 ```
 
 Lastly, the package ask you about the MCMC size. In my case, I set it as
 
-```matlab
+```
   [burn-in size, sampling size]= [5000, 20000]
 ```
 
@@ -149,7 +149,7 @@ And then, the package ask you whether you wanna make a forecast. Type `Y` or `N`
 
 The last thing displayed is
 
-```matlab
+```
   Do you want to save your model into "BLR.mat" ?
 
   type Y or N :
@@ -159,7 +159,7 @@ It is a function to save your setting that you typed. It is saved for the replic
 
 When there is a corresponding mat file(there is a specific file name for each model) in your current working folder, you can see the below output after you select `2. Bayesian Linear Regression` model.
 
-```matlab
+```
   "BLR.mat" is founded"
   Do you want to use the model in "BLR.mat" ?
 

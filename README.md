@@ -47,7 +47,7 @@ Output `results` is a struct that contains the results of an analysis.
 
 ### Example: Bayesian Linear Regression
 
-Suppose we have one dependent variable `y`, one regressor `x`. Then, we can compose the input as
+Suppose we have one dependent variable `y` and one regressor `x`. Then, we can compose the input as
 
 ```matlab
   [T, ~] = size(y)
@@ -127,25 +127,25 @@ It is a description of my Bayesian linear regression model. See the last line. S
   b0: 2 by 1 =
 ```
 
-As shown in the model description, `b0` is a prior mean. In the display, `b0: 2 by 1` means that `b0` should be a 2 by 1 array. My default value `zeros(2, 1)`, so type it in REPL. Then, the next thing is
+As shown in the model description, `b0` is a prior mean. In the display, `b0: 2 by 1` means that `b0` should be a 2 by 1 array. My default value is `zeros(2, 1)`, so type it in REPL. Then, the next thing is
 
 ```
   B0: 2 by 2 =
 ```
 
-In this case, `B0`(prior variance) is a 2 by 2 array. Type it based on your prior belief. Similarly, the package will ask you to type `a0` and `b0`. Since `a0` and `b0` are scalars, just type corresponding double type numbers. For example, I can type
+In this case, `B0`(prior variance) is a 2 by 2 array. Type it based on your prior belief. Similarly, the package will ask you to type `a0` and `b0`. Since `a0` and `b0` are scalars, type corresponding double-type numbers. For example, I can type
 
 ```
   a0: scalar = 4
 ```
 
-Lastly, the package ask you about the MCMC size. In my case, I set it as
+Lastly, the package asks you about the MCMC size. In my case, I set it as
 
 ```
   [burn-in size, sampling size]= [5000, 20000]
 ```
 
-And then, the package ask you whether you wanna make a forecast. Type `Y` or `N`. Also, it will ask about whether you want to calculate the marginal likelihood.
+Then, the package asks you whether you wanna make a forecast. Type `Y` or `N`. Also, it will ask about whether you want to calculate the marginal likelihood.
 
 The last thing displayed is
 
@@ -155,9 +155,9 @@ The last thing displayed is
   type Y or N :
 ```
 
-It is a function to save your setting that you typed. It is saved for the replication. Or, you can modify the mat file to change your setting. After you type `Y` or `N`, you can see estimation results in your command window and pop up windows. The results will be saved in `results`(that you set at the first) as a `struct` type variable.
+It is a function to save the setting that you typed. It is saved for the replication. Or, you can modify the mat file to change your settings. After you type `Y` or `N`, you can see estimation results in your command window and pop-up windows. The results will be saved in `results`(that you set at the first) as a `struct` type variable.
 
-When there is a corresponding mat file(there is a specific file name for each model) in your current working folder, you can see the below output after you select `2. Bayesian Linear Regression` model.
+When there is a corresponding mat file(there is a specific file name for each model) in your current working folder, you can see the below output after you selecting `2. Bayesian Linear Regression` model.
 
 ```
   "BLR.mat" is founded"
@@ -166,7 +166,7 @@ When there is a corresponding mat file(there is a specific file name for each mo
   type Y or N :
 ```
 
-If you want to use the saved setting, press `Y`. Then, the package estimate the model using the saved setting. If you do not want to use the previous setting, press `N` and create a new setting as you did before.
+If you want to use the saved setting, press `Y`. Then, the package estimates the model using the saved setting. If you do not want to use the previous setting, press `N` and create a new setting as you did before.
 
 ## Compiling (mex file)
 

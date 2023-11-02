@@ -1,6 +1,6 @@
 # bayecon.matlab toolkit
 
-This is a <u>Baye</u>sian <u>Econ</u>ometrics toolkit that is very convenient to use. It has a lot of standard econometrics models:
+This is a <u>Baye</u>sian <u>Econ</u>ometrics MATLAB toolbox. It is really convenient to use and has a lot of standard econometrics models:
 
 - Linear Regression
   1. Ordinary Least Squares
@@ -29,7 +29,7 @@ This package is appropriate to use in situations where you need to see patterns 
 
 ## Installation
 
-Just download the whole package files and add the path of its folder in Matlab.
+Just download the whole package files and add the path of its folder in MATLAB.
 
 ## How to use it
 

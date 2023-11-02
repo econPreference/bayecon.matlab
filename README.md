@@ -1,6 +1,6 @@
 # bayecon.matlab toolkit
 
-This is a **Bay**esian **Econ**ometrics MATLAB toolbox. It is really convenient to use and has a lot of standard econometrics models:
+This is a **Bay**esian **econ**ometrics MATLAB toolbox. It is really convenient to use and has a lot of standard econometrics models:
 
 - Linear Regression
   1. Ordinary Least Squares

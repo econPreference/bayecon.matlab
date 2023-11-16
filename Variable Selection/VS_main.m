@@ -16,7 +16,7 @@ disp('Important Note for model 2: ')
 disp('!!Do not include constant term in your regressor!!')
 disp(' ')
 disp('Note: For setting "g" in g prior')
-disp('      I follow recommandations from Fernandez, Ley, and Steel(2001)')
+disp('      I follow recommendations from Fernandez, Ley, and Steel(2001)')
 
 disp(' ')
 disp('Which model would you like to choose?')

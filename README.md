@@ -1,6 +1,6 @@
 # bayecon.matlab toolkit
 
-This is a **Bay**esian **econ**ometrics MATLAB toolbox. It is really convenient to use and has a lot of standard econometrics models:
+This is a **Bay**esian **econ**ometrics MATLAB toolbox. It is convenient to use and has a lot of standard econometrics models:
 
 - Linear Regression
   1. Ordinary Least Squares
@@ -25,7 +25,7 @@ This is a **Bay**esian **econ**ometrics MATLAB toolbox. It is really convenient 
   2. Dirac Spike - g prior
 - Mixture Normal
 
-This package is appropriate to use in situations where you need to see patterns in data easily and quickly (preliminary analysis).
+This package is appropriate to use when you need to see patterns in data easily and quickly (preliminary analysis).
 
 ## Installation
 
@@ -41,13 +41,13 @@ results = bayecon(data)
 
 in REPL(command line) or a script. That's all! When you type it, you will naturally realize how to use it.
 
-Input `data` is a matrix in which each column has observations of a variable (each variable is a column vector). The order of variables is not matter. Bayecon will reorder it as you want.
+Input `data` is a matrix in which each column has observations of a variable (each variable is a column vector). The order of variables does not matter. Bayecon will reorder it as you want.
 
-Output `results` is a struct that contains the results of an analysis.
+Output `results` is a struct containing an analysis's results.
 
 ### Example: Bayesian Linear Regression
 
-Suppose we have one dependent variable `y` and one regressor `x`. Then, we can compose the input as
+Suppose we have one dependent variable, `y`, and one regressor, `x`. Then, we can compose the input as
 
 ```matlab
   [T, ~] = size(y)
@@ -127,13 +127,13 @@ It is a description of my Bayesian linear regression model. See the last line. S
   b0: 2 by 1 =
 ```
 
-As shown in the model description, `b0` is a prior mean. In the display, `b0: 2 by 1` means that `b0` should be a 2 by 1 array. For example, I can type `zeros(2, 1)` in REPL. The next thing is
+As shown in the model description, `b0` is a prior mean. In the display, `b0: 2 by 1` means that `b0` should be a two-by-one array. For example, I can type `zeros(2, 1)` in REPL. The next thing is
 
 ```
   B0: 2 by 2 =
 ```
 
-In this case, `B0`(prior variance) is a 2 by 2 array. Type it based on your prior belief. Similarly, the package will ask you to type `a0` and `b0`. Since `a0` and `b0` are scalars, type double-type numbers based on your belief. For example, I can type
+In this case, `B0`(prior variance) is a two-by-two array. Type it based on your prior belief. Similarly, the package will ask you to type `a0` and `b0`. Since `a0` and `b0` are scalars, type double-type numbers based on your belief. For example, I can type
 
 ```
   a0: scalar = 4
@@ -155,9 +155,9 @@ The last thing displayed is
   type Y or N :
 ```
 
-It is a function to save the setting that you typed. It can be saved for the replication. Or, you can modify the saved mat file to change your settings. After you type `Y` or `N`, you can see estimation results in your command window and pop-up windows. The results will be saved in `results`(that you set at the first) as a `struct` type variable.
+It is a function to save the setting that you typed. It can be saved for the replication. Or, you can modify the saved mat file to change your settings. After you type `Y` or `N`, you can see estimation results in your command and pop-up windows. The results will be saved in `results`(the specified output name of function "bayecon") as a `struct` type variable.
 
-When there is a corresponding mat file(there is a specific file name for each model) in your current working folder, you can see the below output after selecting `2. Bayesian Linear Regression` model.
+When there is a corresponding mat file(a specific file name for each model) in your current working folder, you can see the below output after selecting `2. Bayesian Linear Regression` model.
 
 ```
   "BLR.mat" is founded"

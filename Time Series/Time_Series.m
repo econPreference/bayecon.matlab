@@ -94,7 +94,7 @@ if Model == 1
         disp('white noise | sigma2 ~ Normal(0,sigma2)')
         disp(' ')
         disp('beta ~ Inverse moment prior(Johnson and Rossell, 2010)')
-        disp('(hyperparameter k,v>0 and all scallar)')
+        disp('(hyperparameter k,v>0 and all scalar)')
         disp(' ')
         disp('c ~ Normal(c0, C0)')
         disp('(c0: s+1 by 1, C0: s+1 by s+1)')

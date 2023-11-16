@@ -489,7 +489,7 @@ if Model == 4
         disp('[Data generating Process]')
         disp(' ')
         disp('y_i = x_i*b_1 + xs_i*b_s + u_i')
-        disp('(x_i: exogeneous vector var vector, xs_i: endogeneous var vector)')
+        disp('(x_i: exogenous vector var vector, xs_i: endogenous var vector)')
         disp(' ')
         disp('xs_i = kron(eye(k2), x_i)*gamma_1 + kron(eye(k2), z_i)*gamma_2 + e_i')
         disp('(z_i : instrument var vector)')
@@ -505,8 +505,8 @@ if Model == 4
         disp('inv(Sigma) ~ Wishart(v0, R0)')
         disp('(v0: 1 by 1, R0: k2+1 by k2+1)')
         disp(' ')
-        disp('k1: The number of exogeneous regressor')
-        disp('k2: The number of endogeneous regressor, k3: The number of IV')
+        disp('k1: The number of exogenous regressor')
+        disp('k2: The number of endogenous regressor, k3: The number of IV')
         disp(' ')
         disp('Which column of the data is the variable in?')
         disp('Write column number by row vector')
@@ -514,7 +514,7 @@ if Model == 4
         yind = input('Dependent Variable = ');
         exoind = input('Exogeneous Variable = ');
         k1 = cols(exoind);
-        endoind = input('Endogeneous Variable = ');
+        endoind = input('Endogenous Variable = ');
         k2 = cols(endoind);
         zind = input('Instrument Variable= ');
         k3 = cols(zind);

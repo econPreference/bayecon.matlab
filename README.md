@@ -182,7 +182,7 @@ If you want to cite my package, please cite
 
 ```bibtex
 @software{Lee_Bayecon_Bayesian_Econometrics_2023,
-author = {Lee, Sun Ho},
+author = {Sun Ho Lee},
 month = apr,
 title = {{Bayecon: Bayesian Econometrics package}},
 url = {https://github.com/econPreference/bayecon.matlab},
@@ -193,4 +193,4 @@ year = {2023}
 
 or
 
-> Lee, S. H. (2023), “Bayecon: Bayesian econometrics package.”
+> Lee, Sun Ho (2023), “Bayecon: Bayesian econometrics package.”

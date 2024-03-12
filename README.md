@@ -29,7 +29,7 @@ This package is appropriate to use when you need to see patterns in data easily 
 
 ## Installation
 
-Just download the whole package files and add the path of its folder in MATLAB.
+Download the entire package files and add the path of the folder containing `bayecon.m` in MATLAB.
 
 ## How to use it
 

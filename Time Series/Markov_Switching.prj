@@ -1,5 +1,5 @@
-<deployment-project plugin="plugin.coder" plugin-version="R2023a">
-  <configuration build-checksum="2557699252" file="C:\Users\user\Dropbox\code\MATLAB\Bayecon\Time Series\Markov_Switching.prj" location="C:\Users\user\Dropbox\code\MATLAB\Bayecon\Time Series" name="Markov_Switching" target="target.unifiedcoder" target-name="MATLAB Coder">
+<deployment-project plugin="plugin.coder" plugin-version="R2024a">
+  <configuration build-checksum="3348308939" file="/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Time Series/Markov_Switching.prj" location="/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Time Series" name="Markov_Switching" target="target.unifiedcoder" target-name="MATLAB Coder">
     <profile key="profile.mex">
       <param.BuiltInstrumentedMex>false</param.BuiltInstrumentedMex>
       <param.RanInstrumentedMex>false</param.RanInstrumentedMex>
@@ -11,6 +11,7 @@
       <var.SimdQueryHardwareVendor>Generic</var.SimdQueryHardwareVendor>
       <var.SimdQueryHardwareType>MATLAB Host Computer</var.SimdQueryHardwareType>
       <param.InstructionSetExtensionsAvailableInUI>true</param.InstructionSetExtensionsAvailableInUI>
+      <param.InstructionSetExtensionsConfig.FMA>false</param.InstructionSetExtensionsConfig.FMA>
       <param.ResponsivenessChecks>true</param.ResponsivenessChecks>
       <param.ExtrinsicCalls>true</param.ExtrinsicCalls>
       <param.IntegrityChecks>true</param.IntegrityChecks>
@@ -29,9 +30,10 @@
       <param.RowMajor>option.RowMajor.ColumnMajor</param.RowMajor>
       <param.HighlightPotentialRowMajorIssues>true</param.HighlightPotentialRowMajorIssues>
       <param.PreserveArrayDimensions>false</param.PreserveArrayDimensions>
-      <param.EliminateSingleDimensions>false</param.EliminateSingleDimensions>
       <param.StackUsageMax>200000</param.StackUsageMax>
       <param.FilePartitionMethod>option.FilePartitionMethod.MapMFileToCFile</param.FilePartitionMethod>
+      <param.LargeConstantGeneration>option.LargeConstantGeneration.WriteOnlyDNNConstantsToDataFiles</param.LargeConstantGeneration>
+      <param.LargeConstantThreshold>131072</param.LargeConstantThreshold>
       <param.GenerateComments>true</param.GenerateComments>
       <param.MATLABSourceComments>false</param.MATLABSourceComments>
       <param.MATLABSourceCommentLineNumbers>true</param.MATLABSourceCommentLineNumbers>
@@ -78,6 +80,7 @@
       <param.InitFltsAndDblsToZero>true</param.InitFltsAndDblsToZero>
       <param.DefaultVariableInitialization>option.DefaultVariableInitialization.None</param.DefaultVariableInitialization>
       <param.ConstantInputs>option.ConstantInputs.CheckValues</param.ConstantInputs>
+      <param.UsePrecompiledLibraries>option.UsePrecompiledLibraries.Prefer</param.UsePrecompiledLibraries>
       <param.EnableCRICodeCoverage>true</param.EnableCRICodeCoverage>
       <param.EnableAutoParallelizationReporting>true</param.EnableAutoParallelizationReporting>
       <param.CacheDynamicArrayDataPointer>true</param.CacheDynamicArrayDataPointer>
@@ -98,6 +101,7 @@
         <var.SimdQueryHardwareVendor />
         <var.SimdQueryHardwareType />
         <param.InstructionSetExtensionsAvailableInUI />
+        <param.InstructionSetExtensionsConfig.FMA />
         <param.ResponsivenessChecks />
         <param.ExtrinsicCalls />
         <param.IntegrityChecks />
@@ -116,9 +120,10 @@
         <param.RowMajor />
         <param.HighlightPotentialRowMajorIssues />
         <param.PreserveArrayDimensions />
-        <param.EliminateSingleDimensions />
         <param.StackUsageMax />
         <param.FilePartitionMethod />
+        <param.LargeConstantGeneration />
+        <param.LargeConstantThreshold />
         <param.GenerateComments />
         <param.MATLABSourceComments />
         <param.MATLABSourceCommentLineNumbers />
@@ -165,6 +170,7 @@
         <param.InitFltsAndDblsToZero />
         <param.DefaultVariableInitialization />
         <param.ConstantInputs />
+        <param.UsePrecompiledLibraries />
         <param.EnableCRICodeCoverage />
         <param.EnableAutoParallelizationReporting />
         <param.CacheDynamicArrayDataPointer />
@@ -185,11 +191,13 @@
       <var.SimdQueryHardwareVendor>Generic</var.SimdQueryHardwareVendor>
       <var.SimdQueryHardwareType>MATLAB Host Computer</var.SimdQueryHardwareType>
       <param.InstructionSetExtensionsAvailableInUI>true</param.InstructionSetExtensionsAvailableInUI>
-      <param.InstructionSetExtensions>None</param.InstructionSetExtensions>
+      <param.InstructionSetExtensions>Auto</param.InstructionSetExtensions>
+      <param.InstructionSetExtensionsConfig.FMA>false</param.InstructionSetExtensionsConfig.FMA>
       <param.SaturateOnIntegerOverflow>true</param.SaturateOnIntegerOverflow>
       <param.PurelyIntegerCode />
       <param.SupportNonFinite />
       <param.LoopUnrollThreshold />
+      <param.PreserveInputData />
       <param.EnableAutoParallelization>false</param.EnableAutoParallelization>
       <param.NumberOfCpuThreads>0</param.NumberOfCpuThreads>
       <param.OptimizeReductions>false</param.OptimizeReductions>
@@ -202,11 +210,12 @@
       <param.RowMajor>option.RowMajor.ColumnMajor</param.RowMajor>
       <param.HighlightPotentialRowMajorIssues>true</param.HighlightPotentialRowMajorIssues>
       <param.PreserveArrayDimensions>false</param.PreserveArrayDimensions>
-      <param.EliminateSingleDimensions>false</param.EliminateSingleDimensions>
       <param.StackUsageMax>200000</param.StackUsageMax>
       <param.MultiInstanceCode />
       <param.PreserveUnusedStructFields />
       <param.FilePartitionMethod>option.FilePartitionMethod.MapMFileToCFile</param.FilePartitionMethod>
+      <param.LargeConstantGeneration>option.LargeConstantGeneration.WriteOnlyDNNConstantsToDataFiles</param.LargeConstantGeneration>
+      <param.LargeConstantThreshold>131072</param.LargeConstantThreshold>
       <param.GenerateComments>true</param.GenerateComments>
       <param.CommentStyle />
       <param.MATLABSourceComments>false</param.MATLABSourceComments>
@@ -270,8 +279,8 @@
       <param.CodeProfilingInstrumentation />
       <param.CodeProfilingSaveOptions />
       <param.CodeStackProfiling />
-      <param.CodeCoverage />
       <param.EnableInstrumentCode />
+      <param.CodeCoverage />
       <param.DefaultTestFile />
       <param.MergeInstrumentationResults>false</param.MergeInstrumentationResults>
       <param.RanPilSilVerification>false</param.RanPilSilVerification>
@@ -304,7 +313,7 @@
       <param.HardwareSizeChar.Production>8</param.HardwareSizeChar.Production>
       <param.HardwareSizeShort.Production>16</param.HardwareSizeShort.Production>
       <param.HardwareSizeInt.Production>32</param.HardwareSizeInt.Production>
-      <param.HardwareSizeLong.Production>32</param.HardwareSizeLong.Production>
+      <param.HardwareSizeLong.Production>64</param.HardwareSizeLong.Production>
       <param.HardwareSizeLongLong.Production>64</param.HardwareSizeLongLong.Production>
       <param.HardwareSizeFloat.Production>32</param.HardwareSizeFloat.Production>
       <param.HardwareSizeDouble.Production>64</param.HardwareSizeDouble.Production>
@@ -325,7 +334,7 @@
       <param.HardwareSizeChar.Target>8</param.HardwareSizeChar.Target>
       <param.HardwareSizeShort.Target>16</param.HardwareSizeShort.Target>
       <param.HardwareSizeInt.Target>32</param.HardwareSizeInt.Target>
-      <param.HardwareSizeLong.Target>32</param.HardwareSizeLong.Target>
+      <param.HardwareSizeLong.Target>64</param.HardwareSizeLong.Target>
       <param.HardwareSizeLongLong.Target>64</param.HardwareSizeLongLong.Target>
       <param.HardwareSizeFloat.Target>32</param.HardwareSizeFloat.Target>
       <param.HardwareSizeDouble.Target>64</param.HardwareSizeDouble.Target>
@@ -374,13 +383,15 @@
       <param.CustomFFTCallback />
       <param.CustomBLASCallback />
       <param.CustomLAPACKCallback />
+      <param.UsePrecompiledLibraries>option.UsePrecompiledLibraries.Prefer</param.UsePrecompiledLibraries>
       <param.EnableAutoParallelizationReporting>true</param.EnableAutoParallelizationReporting>
       <param.CacheDynamicArrayDataPointer>true</param.CacheDynamicArrayDataPointer>
       <param.GenerateDefaultInSwitch />
       <param.JustifyMISRAViolations />
       <param.EnableTraceability />
       <param.SILPILVerbosity />
-      <param.UseECoderFeatures>false</param.UseECoderFeatures>
+      <param.CodeProfilingCodeMetrics />
+      <param.UseECoderFeatures>true</param.UseECoderFeatures>
       <param.EnableGitSupport>false</param.EnableGitSupport>
       <param.EnableAutoCommit>true</param.EnableAutoCommit>
       <param.RepositoryStyle>option.RepositoryStyle.Auto</param.RepositoryStyle>
@@ -402,10 +413,12 @@
         <var.SimdQueryHardwareType />
         <param.InstructionSetExtensionsAvailableInUI />
         <param.InstructionSetExtensions />
+        <param.InstructionSetExtensionsConfig.FMA />
         <param.SaturateOnIntegerOverflow />
         <param.PurelyIntegerCode />
         <param.SupportNonFinite />
         <param.LoopUnrollThreshold />
+        <param.PreserveInputData />
         <param.EnableAutoParallelization />
         <param.NumberOfCpuThreads />
         <param.OptimizeReductions />
@@ -417,11 +430,12 @@
         <param.RowMajor />
         <param.HighlightPotentialRowMajorIssues />
         <param.PreserveArrayDimensions />
-        <param.EliminateSingleDimensions />
         <param.StackUsageMax />
         <param.MultiInstanceCode />
         <param.PreserveUnusedStructFields />
         <param.FilePartitionMethod />
+        <param.LargeConstantGeneration />
+        <param.LargeConstantThreshold />
         <param.GenerateComments />
         <param.CommentStyle />
         <param.MATLABSourceComments />
@@ -485,8 +499,8 @@
         <param.CodeProfilingInstrumentation />
         <param.CodeProfilingSaveOptions />
         <param.CodeStackProfiling />
-        <param.CodeCoverage />
         <param.EnableInstrumentCode />
+        <param.CodeCoverage />
         <param.DefaultTestFile />
         <param.MergeInstrumentationResults />
         <param.RanPilSilVerification />
@@ -518,7 +532,6 @@
         <param.HardwareSizeChar.Production />
         <param.HardwareSizeShort.Production />
         <param.HardwareSizeInt.Production />
-        <param.HardwareSizeLong.Production />
         <param.HardwareSizeLongLong.Production />
         <param.HardwareSizeFloat.Production />
         <param.HardwareSizeDouble.Production />
@@ -532,7 +545,6 @@
         <param.HardwareSizeChar.Target />
         <param.HardwareSizeShort.Target />
         <param.HardwareSizeInt.Target />
-        <param.HardwareSizeLong.Target />
         <param.HardwareSizeLongLong.Target />
         <param.HardwareSizeFloat.Target />
         <param.HardwareSizeDouble.Target />
@@ -574,12 +586,14 @@
         <param.CustomFFTCallback />
         <param.CustomBLASCallback />
         <param.CustomLAPACKCallback />
+        <param.UsePrecompiledLibraries />
         <param.EnableAutoParallelizationReporting />
         <param.CacheDynamicArrayDataPointer />
         <param.GenerateDefaultInSwitch />
         <param.JustifyMISRAViolations />
         <param.EnableTraceability />
         <param.SILPILVerbosity />
+        <param.CodeProfilingCodeMetrics />
         <param.UseECoderFeatures />
         <param.EnableGitSupport />
         <param.EnableAutoCommit />
@@ -599,9 +613,9 @@
     <param.TestSnippets />
     <param.ExternalFcnMajority>column</param.ExternalFcnMajority>
     <param.UseGlobals>option.UseGlobals.No</param.UseGlobals>
-    <param.outputfile>${PROJECT_ROOT}\Markov_Switching_mex.mexw64</param.outputfile>
+    <param.outputfile>${PROJECT_ROOT}/Markov_Switching_mex.mexmaci64</param.outputfile>
     <param.version>R2012a</param.version>
-    <param.HasECoderFeatures>false</param.HasECoderFeatures>
+    <param.HasECoderFeatures>true</param.HasECoderFeatures>
     <param.HasGpuCoder>false</param.HasGpuCoder>
     <var.HasNeuralNetworkToolbox>true</var.HasNeuralNetworkToolbox>
     <param.mex.mainhtml />
@@ -622,14 +636,14 @@
     <var.DismissScreener>true</var.DismissScreener>
     <param.unifiedParamStorage />
     <param.hdlParamStorage />
-    <var.gc.lastOutputRoot>codegen\mex\Markov_Switching</var.gc.lastOutputRoot>
+    <var.gc.lastOutputRoot>codegen/mex/Markov_Switching</var.gc.lastOutputRoot>
     <var.gc.lastOutputType>MEX_FILE</var.gc.lastOutputType>
-    <var.gc.preBuildChecksum>4294426277</var.gc.preBuildChecksum>
+    <var.gc.preBuildChecksum>3205411074</var.gc.preBuildChecksum>
     <var.cfi.lastOutputRoot />
     <var.cfi.preBuildChecksum />
     <var.outdatedOnRestore>false</var.outdatedOnRestore>
-    <var.lastUserSourceChecksum>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;checksum&gt;&lt;includedFiles&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\cholmod.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\cols.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\cumsumc.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\discret1.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\invpd.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\invuptr.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\lnpdfig.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\lnpdfmvn.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\lnpdfn.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\logDirichlet.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\maxc.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\meanc.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\minc.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\minresid.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\randDir.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\randgam.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\randig.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\rows.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\Time Series\Markov_Switching.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\vec.m&lt;/file&gt;&lt;/includedFiles&gt;&lt;value&gt;994324422&lt;/value&gt;&lt;/checksum&gt;</var.lastUserSourceChecksum>
-    <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\cholmod.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\cols.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\cumsumc.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\discret1.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\invpd.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\invuptr.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\lnpdfig.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\lnpdfmvn.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\lnpdfn.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\logDirichlet.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\maxc.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\meanc.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\minc.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\minresid.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\randDir.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\randgam.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\randig.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\rows.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\Time Series\Markov_Switching.m&lt;/file&gt;&lt;file&gt;C:\Users\user\Dropbox\code\MATLAB\Bayecon\vec.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
+    <var.lastUserSourceChecksum>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;checksum&gt;&lt;includedFiles&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Time Series/Markov_Switching.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/logDirichlet.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/cols.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/cumsumc.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/discret1.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/lnpdfig.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/lnpdfmvn.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/lnpdfn.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/maxc.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/meanc.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/minresid.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/randDir.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/randgam.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/randig.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/rows.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/vec.m&lt;/file&gt;&lt;/includedFiles&gt;&lt;value&gt;2792688958&lt;/value&gt;&lt;/checksum&gt;</var.lastUserSourceChecksum>
+    <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Time Series/Markov_Switching.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/logDirichlet.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/cols.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/cumsumc.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/discret1.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/lnpdfig.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/lnpdfmvn.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/lnpdfn.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/maxc.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/meanc.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/minresid.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/randDir.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/randgam.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/randig.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/rows.m&lt;/file&gt;&lt;file&gt;/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/M_library/vec.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
     <param.forceMexBuild>false</param.forceMexBuild>
     <param.NoDefaultJIT>false</param.NoDefaultJIT>
     <param.configImportActive>false</param.configImportActive>
@@ -637,7 +651,7 @@
     <var.notGpuCoder>true</var.notGpuCoder>
     <var.boundToGui>true</var.boundToGui>
     <var.isConfigDialog>false</var.isConfigDialog>
-    <var.ecoderEnabled>false</var.ecoderEnabled>
+    <var.ecoderEnabled>true</var.ecoderEnabled>
     <param.AlwaysGenerateTypedefGuards>false</param.AlwaysGenerateTypedefGuards>
     <param.RemoveDuplicateFunctionsAndTypes>true</param.RemoveDuplicateFunctionsAndTypes>
     <param.EnableStructExplosion>true</param.EnableStructExplosion>
@@ -646,9 +660,9 @@
     <param.mex.outputfile>Markov_Switching_mex</param.mex.outputfile>
     <param.grt.outputfile>Markov_Switching</param.grt.outputfile>
     <param.artifact>option.target.artifact.mex</param.artifact>
-    <param.outputfile>${PROJECT_ROOT}\Markov_Switching_mex.mexw64</param.outputfile>
+    <param.outputfile>${PROJECT_ROOT}/Markov_Switching_mex.mexmaci64</param.outputfile>
     <param.CppNamespace />
-    <param.CppPackagesToNamespaces>true</param.CppPackagesToNamespaces>
+    <param.CppPreserveNamespaces>true</param.CppPreserveNamespaces>
     <param.CppNamespaceForMathworksCode>coder</param.CppNamespaceForMathworksCode>
     <param.CppPreserveClasses>true</param.CppPreserveClasses>
     <param.CppGenerateEnumClass>true</param.CppGenerateEnumClass>
@@ -668,10 +682,6 @@
     <param.gpu.EnableCUSOLVER>false</param.gpu.EnableCUSOLVER>
     <param.gpu.EnableCUFFT>false</param.gpu.EnableCUFFT>
     <param.gpu.EnableMemoryManager>false</param.gpu.EnableMemoryManager>
-    <param.gpu.BlockAlignment>256</param.gpu.BlockAlignment>
-    <param.gpu.FreeMode />
-    <param.gpu.MinPoolSize>8</param.gpu.MinPoolSize>
-    <param.gpu.MaxPoolSize>2048</param.gpu.MaxPoolSize>
     <var.checkIssuesGpu>false</var.checkIssuesGpu>
     <var.hasGpu>false</var.hasGpu>
     <var.isDeepLearningForMatlabCoderEnabled>true</var.isDeepLearningForMatlabCoderEnabled>
@@ -788,7 +798,7 @@
       <param.grt.outputfile />
       <param.artifact />
       <param.CppNamespace />
-      <param.CppPackagesToNamespaces />
+      <param.CppPreserveNamespaces />
       <param.CppNamespaceForMathworksCode />
       <param.CppPreserveClasses />
       <param.CppGenerateEnumClass />
@@ -808,10 +818,6 @@
       <param.gpu.EnableCUSOLVER />
       <param.gpu.EnableCUFFT />
       <param.gpu.EnableMemoryManager />
-      <param.gpu.BlockAlignment />
-      <param.gpu.FreeMode />
-      <param.gpu.MinPoolSize />
-      <param.gpu.MaxPoolSize />
       <var.checkIssuesGpu />
       <var.hasGpu />
       <var.isDeepLearningForMatlabCoderEnabled />
@@ -884,13 +890,13 @@
       <param.FixedPointUseDesignRanges />
     </unset>
     <fileset.entrypoints>
-      <file custom-data-expanded="false" value="${PROJECT_ROOT}\Markov_Switching.m">
+      <file custom-data-expanded="false" value="${PROJECT_ROOT}/Markov_Switching.m">
         <Marker>1528460817801</Marker>
       </file>
     </fileset.entrypoints>
     <fileset.testbench />
     <fileset.inputtypes>
-      <file custom-data-expanded="false" value="${PROJECT_ROOT}\Markov_Switching.m">
+      <file custom-data-expanded="false" value="${PROJECT_ROOT}/Markov_Switching.m">
         <Inputs fileName="Markov_Switching.m" functionName="Markov_Switching" nargout="1">
           <Input Name="X" typeId="0" />
           <Input Name="Y" typeId="1" />
@@ -959,13 +965,16 @@
       </file>
     </fileset.inputtypes>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="Markov_Switching_mex.mexw64" optional="false">C:\Users\user\Dropbox\code\MATLAB\Bayecon\Time Series\Markov_Switching_mex.mexw64</file>
+      <file location="${PROJECT_ROOT}" name="Markov_Switching_mex.mexmaci64" optional="false">/Users/preference/Library/CloudStorage/Dropbox/code/MATLAB/Bayecon/Time Series/Markov_Switching_mex.mexmaci64</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2023a</root>
+      <root>/Applications/MATLAB_R2024b.app</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
         <toolbox name="neuralnetwork" />
       </toolboxes>
       <toolbox>
@@ -974,24 +983,39 @@
         </matlabcoder>
       </toolbox>
       <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
         <neuralnetwork>
           <enabled>true</enabled>
         </neuralnetwork>
       </toolbox>
     </matlab>
     <platform>
-      <unix>false</unix>
-      <mac>false</mac>
-      <windows>true</windows>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
       <win2k>false</win2k>
       <winxp>false</winxp>
       <vista>false</vista>
       <linux>false</linux>
       <solaris>false</solaris>
-      <osver>10.0</osver>
-      <os32>false</os32>
-      <os64>true</os64>
-      <arch>win64</arch>
+      <osver>26.5.1</osver>
+      <os32>true</os32>
+      <os64>false</os64>
+      <arch>maci64</arch>
       <matlab>true</matlab>
     </platform>
   </configuration>

@@ -181,10 +181,10 @@ Some models use compiled MATLAB files (`mex` files) for faster computation. The 
 If you use this package in your work, please cite
 
 ```bibtex
-@software{Lee_Bayecon_Bayesian_Econometrics_2023,
-author = {Sun Ho Lee},
-month = apr,
-title = {{Bayecon: Bayesian Econometrics package}},
+@software{Lee_Bayecon_Bayesian_Econometrics_Toolbox_2026,
+author = {Sunho Lee},
+month = jun,
+title = {{Bayecon: Bayesian Econometrics Toolbox}},
 url = {https://github.com/econPreference/bayecon.matlab},
 version = {1.0.1},
 year = {2026}
@@ -193,4 +193,4 @@ year = {2026}
 
 or
 
-> Lee, Sun Ho (2026), “Bayecon: Bayesian econometrics package.”
+> Lee, Sunho (2026), “Bayecon: Bayesian Econometrics Toolbox.”

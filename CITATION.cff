@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "If you want to cite my package, please cite it as below."
+message: "If you use this package, please cite it as follows."
 authors:
-- family-names: "Lee"
-  given-names: "Sun Ho"
-  orcid: "https://orcid.org/0000-0002-1822-3398"
-title: "Bayecon: Bayesian Econometrics package"
-version: 1.0.0
-date-released: 2023-04-17
+  - family-names: "Lee"
+    given-names: "Sunho"
+    orcid: "https://orcid.org/0000-0002-1822-3398"
+title: "Bayecon: Bayesian Econometrics Toolbox"
+version: 1.0.1
+date-released: 2026-06-11
 url: "https://github.com/econPreference/bayecon.matlab"

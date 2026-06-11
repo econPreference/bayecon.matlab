@@ -5,14 +5,14 @@ format shortG
 
 disp(' ')
 disp('/////////////////////////////////////////////')
-disp('////////Bayesian Econometrics ToolBox////////')
+disp('////////Bayesian Econometrics Toolbox////////')
 disp('/////////////////////////////////////////////')
 disp(' ')
 disp('Model: Linear Regression')
 disp('====================Model====================')
 disp('1. Ordinary Least Squares')
 disp('2. Bayesian Linear Regression')
-disp('3. Linear Regression(Heterogeneity)')
+disp('3. Linear Regression (Heterogeneity)')
 disp('4. Bayesian IV Linear Regression')
 disp('=============================================')
 disp(' ')
@@ -22,7 +22,7 @@ Model = input(' ');
 
 if Model == 1
     disp(' ')
-    disp('What column in the data matrix is the dependent variable?')
+    disp('Which column in the data matrix is the dependent variable?')
     disp(' ')
     x = input(' ');
     disp(' ')
@@ -38,10 +38,10 @@ if Model == 1
     disp(' ')
     disp('Do you want to graph OLS results?')
     disp(' ')
-    graph_ok = input('type Y or N : ','s');
+    graph_ok = input('Type Y or N: ','s');
     disp(' ')
     if graph_ok == 'Y'
-        disp('In graph, Which column data should be placed on the X axis?')
+        disp('In the graph, which data column should be placed on the X-axis?')
         disp(' ')
         graph_what = input('scalar: ');
         graph = find(xind == graph_what);
@@ -60,10 +60,10 @@ if Model == 2
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"BLR.mat" is founded"')
-        disp('Do you want to use the model in "BLR.mat" ?')
+        disp('"BLR.mat" was found.')
+        disp('Do you want to use the model saved in "BLR.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -79,7 +79,7 @@ if Model == 2
         disp('Model: Bayesian Linear Regression')
         disp('=============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('Y | X,b,sig2 ~ Normal(X*b, sig2 * I(T,T))')
         disp(' ')
@@ -89,9 +89,9 @@ if Model == 2
         disp('sig2 ~ InverseGamma(a0 / 2, d0 / 2)')
         disp('(a0: 1 by 1, d0: 1 by 1)')
         disp(' ')
-        disp('T: Number of observations, k: Number of Regressor')
+        disp('T: Number of observations, k: Number of regressors')
         disp(' ')
-        disp('What column in the data matrix is the dependent variable?')
+        disp('Which column in the data matrix is the dependent variable?')
         disp(' ')
         x = input(' ');
         disp(' ')
@@ -106,40 +106,40 @@ if Model == 2
         k_reg = cols(X);
         
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         b0 = input(['b0: ' num2str(k_reg) ' by 1 = ']);
         B0 = input(['B0: ' num2str(k_reg) ' by ' num2str(k_reg) ' = ']);
         a0 = input('a0: scalar = ');
         d0 = input('d0: scalar = ');
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
         disp('Do you want to forecast?')
         disp(' ')
-        forecast = input('type Y or N : ','s');
+        forecast = input('Type Y or N: ','s');
         disp(' ')
         if forecast == 'Y'
-            disp('What are the regressor values to be used in the forecast?')
+            disp('What regressor values should be used for the forecast?')
             disp(' ')
-            x_f = input(['column vector : ' num2str(k_reg) ' by 1 = ']);
+            x_f = input(['column vector: ' num2str(k_reg) ' by 1 = ']);
         else
             x_f = [ ];
         end
-        disp('Would you like to calculate Marginal Likelihood(Laplace Method)')
+        disp('Would you like to calculate the marginal likelihood (Laplace method)?')
         disp(' ')
-        ML = input('type Y or N : ','s');
+        ML = input('Type Y or N: ','s');
         disp(' ')
-        disp('Do you want to save your model into "BLR.mat" ?')
+        disp('Do you want to save your model as "BLR.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('BLR.mat','x','b0','B0','a0','d0','n','forecast','x_f','ML')
             disp(' ')
-            disp('Model is stored in file named "BLR.mat"')
+            disp('Model saved as "BLR.mat"')
             disp(' ')
         end
     elseif load_hyper == 1
@@ -186,7 +186,7 @@ if Model == 2
     disp(['The dependent variable is the ' num2str(yind) 'th column of data.'])
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter:')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[b0, B0]= ')
     disp([b0 B0]);
@@ -194,15 +194,15 @@ if Model == 2
     disp([a0 d0]);
     disp('-----------------------------------------------------------------------------------------------------------');
     if ML == 'Y'
-        disp(['Log Marginal Likelihood: ' num2str(lnML) '(Laplace Method)'])
+        disp(['Log marginal likelihood: ' num2str(lnML) ' (Laplace method)'])
     end
     max_ineff = max(postmom(:,7));
     min_p = min(postmom(:,8));
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke-p 값');
+    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke p');
     disp('===========================================================================================================');    
     for i = 1:cols(xind)
         disp(['          b ' num2str([xind(1,i) postmom(i,2) postmom(i,3) postmom(i,4) postmom(i,5) postmom(i,6) postmom(i,7) postmom(i,8)])]);
@@ -212,7 +212,7 @@ if Model == 2
     disp(['  Bayesian R2      ' num2str([postmom(end,2) postmom(end,3) postmom(end,4) postmom(end,5) postmom(end,6) postmom(end,7) postmom(end,8)])]);
     disp('===========================================================================================================');    disp(' ')
     if save_mat == 'Y'
-        disp('Model is stored in file named "BLR.mat"')
+        disp('Model saved as "BLR.mat"')
     end
     npara = cols(MHm);
     m1 = round(sqrt(npara));
@@ -259,10 +259,10 @@ if Model == 3
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"LRH.mat" is founded"')
-        disp('Do you want to use the model in "LRH.mat" ?')
+        disp('"LRH.mat" was found.')
+        disp('Do you want to use the model saved in "LRH.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -274,10 +274,10 @@ if Model == 3
     
     if load_hyper == 0
         disp('=============================================')
-        disp('Linear Regression(Heterogeneity)')
+        disp('Linear Regression (Heterogeneity)')
         disp('=============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('y_t | x_t,b,sig2,lambda_t ~ Normal(x_t*b, inv(lambda_t)*sig2)')
         disp(' ')
@@ -290,9 +290,9 @@ if Model == 3
         disp('lambda_t ~ Gamma(v / 2, v / 2)')
         disp('(v: 1 by 1)')
         disp(' ')
-        disp('T: Number of observations, k: Number of Regressor')
+        disp('T: Number of observations, k: Number of regressors')
         disp(' ')
-        disp('What column in the data matrix is the dependent variable?')
+        disp('Which column in the data matrix is the dependent variable?')
         disp(' ')
         x = input(' ');
         disp(' ')
@@ -307,7 +307,7 @@ if Model == 3
         k_reg = cols(X);
         
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         b0 = input(['b0: ' num2str(k_reg) ' by 1 = ']);
         B0 = input(['B0: ' num2str(k_reg) ' by ' num2str(k_reg) ' = ']);
@@ -315,34 +315,34 @@ if Model == 3
         d0 = input('d0: scalar = ');
         v = input('v: scalar = ');
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
         disp('Do you want to forecast?')
         disp(' ')
-        forecast = input('type Y or N : ','s');
+        forecast = input('Type Y or N: ','s');
         disp(' ')
         if forecast == 'Y'
-            disp('What are the regressor values to be used in the forecast?')
+            disp('What regressor values should be used for the forecast?')
             disp(' ')
-            x_f = input(['column vector : ' num2str(k_reg) ' by 1 = ']);
+            x_f = input(['column vector: ' num2str(k_reg) ' by 1 = ']);
         else
             x_f = [ ];
         end
         disp(' ')
-        disp('Would you like to calculate Marginal Likelihood(Laplace Method)')
+        disp('Would you like to calculate the marginal likelihood (Laplace method)?')
         disp(' ')
-        ML = input('type Y or N : ','s');
+        ML = input('Type Y or N: ','s');
         disp(' ')
-        disp('Do you want to save your model into "LRH.mat" ?')
+        disp('Do you want to save your model as "LRH.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('LRH.mat','x','b0','B0','a0','d0','v','n','forecast','x_f','ML')
             disp(' ')
-            disp('Model is stored in file named "LRH.mat"')
+            disp('Model saved as "LRH.mat"')
             disp(' ')
         end
     elseif load_hyper == 1
@@ -388,12 +388,12 @@ if Model == 3
     
     clc
     disp('===========================================================================================================');
-    disp('Model: Linear Regression(Heterogeneity)')
+    disp('Model: Linear Regression (Heterogeneity)')
     disp('-----------------------------------------------------------------------------------------------------------');
     disp(['The dependent variable is the ' num2str(yind) 'th column of data.'])
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter: ')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[b0, B0]= ')
     disp([b0 B0]);
@@ -403,15 +403,15 @@ if Model == 3
     disp(v');
     disp('-----------------------------------------------------------------------------------------------------------');
     if ML == 'Y'
-        disp(['Log Marginal Likelihood: ' num2str(lnML) '(Laplace Method)'])
+        disp(['Log marginal likelihood: ' num2str(lnML) ' (Laplace method)'])
     end
     max_ineff = max(postmom(:,7));
     min_p = min(postmom(:,8));
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff     Geweke-p 값');
+    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff     Geweke p');
     disp('===========================================================================================================');
     for i = 1:cols(xind)
         disp(['          b ' num2str([xind(1,i) postmom(i,2) postmom(i,3) postmom(i,4) postmom(i,5) postmom(i,6) postmom(i,7) postmom(i,8)])]);
@@ -419,7 +419,7 @@ if Model == 3
     disp(['         sig2      ' num2str([postmom(end,2) postmom(end,3) postmom(end,4) postmom(end,5) postmom(end,6) postmom(end,7) postmom(end,8)])]);
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named "LRH.mat"')
+        disp('Model saved as "LRH.mat"')
     end
     MHm_plot = [bm Sig2m];
     npara = cols(MHm_plot);
@@ -468,10 +468,10 @@ if Model == 4
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"BILR.mat" is founded"')
-        disp('Do you want to use the model in "BILR.mat" ?')
+        disp('"BILR.mat" was found.')
+        disp('Do you want to use the model saved in "BILR.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -486,13 +486,13 @@ if Model == 4
         disp('Model: Bayesian IV Linear Regression')
         disp('=============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('y_i = x_i*b_1 + xs_i*b_s + u_i')
-        disp('(x_i: exogenous vector var vector, xs_i: endogenous var vector)')
+        disp('(x_i: exogenous variable vector, xs_i: endogenous variable vector)')
         disp(' ')
         disp('xs_i = kron(eye(k2), x_i)*gamma_1 + kron(eye(k2), z_i)*gamma_2 + e_i')
-        disp('(z_i : instrument var vector)')
+        disp('(z_i: instrument variable vector)')
         disp(' ')
         disp('[u_i; e_i] ~ Normal(O, Sigma)')
         disp(' ')
@@ -505,21 +505,21 @@ if Model == 4
         disp('inv(Sigma) ~ Wishart(v0, R0)')
         disp('(v0: 1 by 1, R0: k2+1 by k2+1)')
         disp(' ')
-        disp('k1: The number of exogenous regressor')
-        disp('k2: The number of endogenous regressor, k3: The number of IV')
+        disp('k1: Number of exogenous regressors')
+        disp('k2: Number of endogenous regressors, k3: Number of instruments')
         disp(' ')
-        disp('Which column of the data is the variable in?')
-        disp('Write column number by row vector')
+        disp('Which columns contain these variables?')
+        disp('Enter the column numbers as row vectors.')
         disp(' ')
-        yind = input('Dependent Variable = ');
-        exoind = input('Exogeneous Variable = ');
+        yind = input('Dependent variable = ');
+        exoind = input('Exogenous variable = ');
         k1 = cols(exoind);
-        endoind = input('Endogenous Variable = ');
+        endoind = input('Endogenous variable = ');
         k2 = cols(endoind);
-        zind = input('Instrument Variable= ');
+        zind = input('Instrument variable = ');
         k3 = cols(zind);
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         b0 = input(['b0: ' num2str(k1+k2) ' by 1 = ']);
         B0 = input(['B0: ' num2str(k1+k2) ' by ' num2str(k1+k2) ' = ']);
@@ -528,7 +528,7 @@ if Model == 4
         v0 = input('v0: 1 by 1 = ');
         R0 = input(['R0: ' num2str(k2+1) ' by ' num2str(k2+1) ' = ']);
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
@@ -536,30 +536,30 @@ if Model == 4
         
         disp('Do you want to forecast?')
         disp(' ')
-        forecast = input('type Y or N : ','s');
+        forecast = input('Type Y or N: ','s');
         disp(' ')
         if forecast == 'Y'
-            disp('What are the regressor and IV values to be used in the forecast?')
+            disp('What regressor and IV values should be used for the forecast?')
             disp('Enter regressor and IV values in the same column as the data.')
-            disp('You can enter any value for the dependent variable position.')
+            disp('You can enter any value in the dependent-variable position.')
             disp(' ')
-            x_f = input(['row vector : 1 by ' num2str(cols(data)) ' = ']);
+            x_f = input(['row vector: 1 by ' num2str(cols(data)) ' = ']);
         elseif forecast == 'N'
             x_f = [ ];
         end
         disp(' ')
-        disp('Would you like to calculate Marginal Likelihood(Laplace Method)')
+        disp('Would you like to calculate the marginal likelihood (Laplace method)?')
         disp(' ')
-        ML = input('type Y or N : ','s');
+        ML = input('Type Y or N: ','s');
         disp(' ')
-        disp('Do you want to save your model into "BILR.mat" ?')
+        disp('Do you want to save your model as "BILR.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('BILR.mat','yind','endoind','zind','exoind',...
                 'b0','B0','gamma0','G0','v0','R0','n','forecast','x_f','ML')
             disp(' ')
-            disp('Model is stored in file named  "BILR.mat"')
+            disp('Model saved as "BILR.mat"')
         end
     elseif load_hyper == 1
         Prior = load('BILR.mat');
@@ -609,12 +609,12 @@ if Model == 4
     disp('Model: Bayesian IV Linear Regression')
     disp('-----------------------------------------------------------------------------------------------------------');
     disp(['The dependent variable is the ' num2str(yind) 'th column of data.'])
-    disp(['Endogenous regressor is the ' num2str(endoind) 'th column of data.'])
-    disp(['IV is the ' num2str(zind) 'th column of data.'])
+    disp(['Endogenous regressors are in columns ' num2str(endoind) ' of data.'])
+    disp(['Instruments are in columns ' num2str(zind) ' of data.'])
     disp(' ')
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter: ')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[b0, B0]= ')
     disp([b0 B0]);
@@ -626,27 +626,27 @@ if Model == 4
     disp(R0)
     disp('-----------------------------------------------------------------------------------------------------------');
     if ML == 'Y'
-        disp(['Log Marginal Likelihood: ' num2str(lnML) '(Laplace Method)'])
+        disp(['Log marginal likelihood: ' num2str(lnML) ' (Laplace method)'])
     end
     max_ineff = max([postmom_beta(:,7);postmom_gamma(:,7);postmom_Sigma(:,7)]);
     min_p = min([postmom_beta(:,8);postmom_gamma(:,8);postmom_Sigma(:,8)]);
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff     Geweke-p 값');
+    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff     Geweke p');
     disp('===========================================================================================================');
-    disp('Regress Y on EXOgeneous regressor: ')
+    disp('Regress Y on exogenous regressors:')
     for i = 1:k1
         disp(['         b  ' num2str([exoind(1,i) postmom_beta(i,2) postmom_beta(i,3) postmom_beta(i,4) postmom_beta(i,5) postmom_beta(i,6) postmom_beta(i,7) postmom_beta(i,8)])]);
     end
-    disp('Regress Y on ENDOgeneous regressor: ')
+    disp('Regress Y on endogenous regressors:')
     for i = 1: k2
         disp(['         b  ' num2str([endoind(1,i) postmom_beta(k1 + i,2) postmom_beta(k1 + i,3) postmom_beta(k1 + i,4) postmom_beta(k1 + i,5) postmom_beta(k1 + i,6) postmom_beta(k1 + i,7) postmom_beta(k1 + i,8)])]);
     end
     for i = 1:k2
     disp('-----------------------------------------------------------------------------------------------------------');
-        disp(['Regress ' num2str(endoind(1,i)) 'th ENDogeneous on EXO & IV variable: '])
+        disp(['Regress the ' num2str(endoind(1,i)) 'th endogenous variable on exogenous and IV variables:'])
         for j = 1:k1
             disp(['      gamma ' num2str([exoind(1,j) postmom_gamma((k1+k3)*(i-1) + j,2) postmom_gamma((k1+k3)*(i-1) + j,3) postmom_gamma((k1+k3)*(i-1) + j,4) postmom_gamma((k1+k3)*(i-1) + j,5) postmom_gamma((k1+k3)*(i-1) + j,6) postmom_gamma((k1+k3)*(i-1) + j,7) postmom_gamma((k1+k3)*(i-1) + j,8)])]);
         end
@@ -661,13 +661,13 @@ if Model == 4
     r = [0; r(1:end - 1)] + 1;
     c(c == 0) = k2+1;
     ind_Sigma =[c r];
-    disp('The element of Sigma: ')
+    disp('Elements of Sigma:')
     for i = 1:(k2+1)^2
         disp(['   Sigma ' num2str(ind_Sigma(i,:)) '     ' num2str([postmom_Sigma(i,2) postmom_Sigma(i,3) postmom_Sigma(i,4) postmom_Sigma(i,5) postmom_Sigma(i,6) postmom_Sigma(i,7) postmom_Sigma(i,8)])]);
     end
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named  "BILR.mat"')
+        disp('Model saved as "BILR.mat"')
     end
     MHm_plot = [bm Sigmam(:,1)];
     npara = cols(MHm_plot); % 파라메터의 수

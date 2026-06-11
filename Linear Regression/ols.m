@@ -79,7 +79,7 @@ if nargin == 2 || output == 1
     disp('        R2         adj_R2      SchwarzIC    AkaikeIC');
     disp( [R2 adj_R2 SC AIC] );
     disp('==================================================================================');
-    disp('        beta       est_se(b)     t-value      p-value    Confidence Interval(95%)  ');
+    disp('        beta       est_se(b)     t-value      p-value    95% confidence interval  ');
     disp('==================================================================================');
     disp([b est_se t p CI_lower CI_upper]);
     disp('==================================================================================')

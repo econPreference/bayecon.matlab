@@ -24,7 +24,7 @@ for iter = 1:n
         fprintf('Current iteration: %G\n',iter);
         disp('=====================================')
         for i = 1 : M
-            fprintf('[Gruop %G] \n',i);
+            fprintf('[Group %G] \n',i);
             disp(' ')
             disp('[mean: ]')
             disp(betam(:,i)')

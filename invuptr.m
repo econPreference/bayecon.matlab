@@ -8,13 +8,13 @@ function T = invuptr(T)
 
 	[m,n] = size(T);
         if m~=n
-        	disp('matrix T  is not square')  
+            disp('Matrix T is not square.')
         return;
         end;
         s = eye(n,n);
 	for k = n:-1:1
           if ( T(k,k) == 0)   
-            disp('matrix T is singular')
+            disp('Matrix T is singular.')
             return;    
           end;
 	  T(k,k) = 1/T(k,k);

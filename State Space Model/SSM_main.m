@@ -3,7 +3,7 @@ clc
 format shortG
 disp(' ')
 disp('/////////////////////////////////////////////')
-disp('////////Bayesian Econometrics ToolBox////////')
+disp('////////Bayesian Econometrics Toolbox////////')
 disp('/////////////////////////////////////////////')
 disp(' ')
 disp('Model: State Space Model')
@@ -11,7 +11,7 @@ disp('====================Model====================')
 disp('1. Unobserved Component Model')
 disp('2. Dynamic Common Factor Model')
 disp('3. Time-varying Parameter')
-disp('4. ARMA-X(Kalman filter)')
+disp('4. ARMA-X (Kalman filter)')
 disp('5. Stochastic Volatility')
 disp('=============================================')
 disp(' ')
@@ -26,10 +26,10 @@ if Model == 1
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"UCM.mat" is founded"')
-        disp('Do you want to use the model in "UCM.mat" ?')
+        disp('"UCM.mat" was found.')
+        disp('Do you want to use the model saved in "UCM.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -44,7 +44,7 @@ if Model == 1
         disp('Model: Unobserved Component Model')
         disp('===============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('y_(t) = yp_(t) + yc_(t)')
         disp('yp_(t) = x(t-1) + yp_(t-1) + w_(t), w_(t)~Normal(0,sig2_w)')
@@ -66,7 +66,7 @@ if Model == 1
         disp('What is d?')
         d = input('scalar: ');
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         phi0 = input('phi0: p by 1 = ');
         PHI0 = input('PHI0: p by p = ');
@@ -80,18 +80,18 @@ if Model == 1
         z01 = input('z01: scalar = ');
         z02 = input('z02: scalar = ');
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
-        disp('Do you want to save your model into "UCM.mat" ?')
+        disp('Do you want to save your model as "UCM.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('UCM.mat','d','phi0','PHI0','w01','w02','e01','e02','n','z01','z02')
             disp(' ')
-            disp('Model is stored in file named  "UCM.mat"')
+            disp('Model saved as "UCM.mat"')
         end
     elseif load_hyper == 1
         Prior = load('UCM.mat');
@@ -130,7 +130,7 @@ if Model == 1
     disp('-----------------------------------------------------------------------------------------------------------');
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter: ')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[phi0, PHI0]= ')
     disp([phi0 PHI0]);
@@ -145,9 +145,9 @@ if Model == 1
     min_p = min([postmom_phi(:,8);postmom_sig2w(:,8);postmom_sig2e(:,8)]);
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke-p 값');
+    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke p');
     disp('===========================================================================================================');
     p = rows(phi0);
     for i = 1:p
@@ -159,7 +159,7 @@ if Model == 1
     disp(['       sig2_z     ' num2str([postmom_sig2z(1,2) postmom_sig2z(1,3) postmom_sig2z(1,4) postmom_sig2z(1,5) postmom_sig2z(1,6) postmom_sig2z(1,7) postmom_sig2z(1,8)])]);
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named  "UCM.mat"')
+        disp('Model saved as "UCM.mat"')
     end
     MHm = [phim sig2_em sig2_wm sig2_zm];
     npara = cols(MHm); % 파라메터의 수
@@ -224,10 +224,10 @@ if Model == 2
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"CFM.mat" is founded"')
-        disp('Do you want to use the model in "CFM.mat" ?')
+        disp('"CFM.mat" was found.')
+        disp('Do you want to use the model saved in "CFM.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -242,7 +242,7 @@ if Model == 2
         disp('Model: Dynamic Common Factor Model')
         disp('===============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('y_(t) = H*beta(t) + e(t); N by 1 vector')
         disp('e(t) ~ Normal(0,diag(sig2_1, ..., sig2_i, ..., sig2_N))')
@@ -264,7 +264,7 @@ if Model == 2
         disp('What is the scale?')
         scale = input('scalar: ');
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         N = cols(data);
         h0 = input(['h0: ' num2str(N) ' by 1 = ']);
@@ -281,18 +281,18 @@ if Model == 2
 %         av = input('av: scalar = ');
 %         dv = input('dv: scalar = ');
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
-        disp('Do you want to save your model into "CFM.mat" ?')
+        disp('Do you want to save your model as "CFM.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('CFM.mat','scale','h0','H0','g0','G0','a0','d0','n')%,'av','dv')
             disp(' ')
-            disp('Model is stored in file named  "CFM.mat"')
+            disp('Model saved as "CFM.mat"')
         end
     elseif load_hyper == 1
         Prior = load('CFM.mat');
@@ -332,7 +332,7 @@ if Model == 2
     disp('-----------------------------------------------------------------------------------------------------------');
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter: ')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[h0; H0]= ')
     disp([h0'; H0'])
@@ -348,9 +348,9 @@ if Model == 2
     min_p = min([postmom_H(:,8);postmom_sig2(:,8);postmom_G(:,8);postmom_mu(:,8);postmom_sig2v(:,8)]);
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column    Estimates     S.E.        2.5%         50%        97.5%      Ineff    Geweke-p');
+    disp('   nth column    Estimates     S.E.        2.5%         50%        97.5%      Ineff    Geweke p');
     disp('===========================================================================================================');
     disp('[Factor Loading]')
     N = cols(data);
@@ -368,7 +368,7 @@ if Model == 2
     disp(['       sig2v      ' num2str([postmom_sig2v(1,2) postmom_sig2v(1,3) postmom_sig2v(1,4) postmom_sig2v(1,5) postmom_sig2v(1,6) postmom_sig2v(1,7) postmom_sig2v(1,8)])]);
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named  "CFM.mat"')
+        disp('Model saved as "CFM.mat"')
     end
     MHm = [mum Gm sig2vm];
     npara = cols(MHm(:,1:2)); % 파라메터의 수
@@ -421,10 +421,10 @@ if Model == 3
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"TVP.mat" is founded"')
-        disp('Do you want to use the model in "TVP.mat" ?')
+        disp('"TVP.mat" was found.')
+        disp('Do you want to use the model saved in "TVP.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -440,7 +440,7 @@ if Model == 3
         disp('Model: Time-varying Parameter')
         disp('=============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('y_t = x_t*beta + x1_t*beta_t + e_t')
         disp('(e_t ~ N(O,Sigma))')
@@ -459,11 +459,11 @@ if Model == 3
         disp('k: The number of regressors that have non-time-varying coefficients')
         disp('k1: The number of regressors that have time-varying coefficients')
         disp(' ')
-        disp('What column in the data matrix is the dependent variable?')
+        disp('Which column in the data matrix is the dependent variable?')
         disp(' ')
         yind = input(' ');
         disp(' ')
-        disp('What column in the data matrix has time-varying coef?')
+        disp('Which column in the data matrix has a time-varying coefficient?')
         x1ind = input('column vector: ');
         k_data = cols(data);
         tool1 = ones(k_data,1);
@@ -475,13 +475,13 @@ if Model == 3
         k_x = cols(X);
         k_x1 = cols(X1);
         disp(' ')
-        disp('Do you want to restrict some non-varying coef into stationary region?')
-        restriction = input('type Y or N : ','s');
+        disp('Do you want to restrict any non-time-varying coefficients to the stationary region?')
+        restriction = input('Type Y or N: ','s');
         disp(' ')
         if restriction == 'Y'
-            disp('What column in the data matrix has that restiction?')
+            disp('Which column in the data matrix has that restriction?')
             disp(' ')
-            res_x = input('column vector : ');
+            res_x = input('column vector: ');
         else
             res_x = 1;
         end
@@ -493,7 +493,7 @@ if Model == 3
         disp(' ')
         
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         
         b0 = input(['b0: ' num2str(k_x) ' by 1 = ']);
@@ -505,37 +505,37 @@ if Model == 3
         v0 = input('v0: scalar = ');
         R0 = input(['R0: ' num2str(k_x1) ' by ' num2str(k_x1) ' = ']);
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
         disp('Do you want to forecast?')
         disp(' ')
-        forecast = input('type Y or N : ','s');
+        forecast = input('Type Y or N: ','s');
         disp(' ')
         if forecast == 'Y'
-            disp('What are the regressor values to be used in the forecast?')
+            disp('What regressor values should be used for the forecast?')
             disp('Enter regressor values in the same column as the data.')
-            disp('You can enter any value for the dependent variable position.')
+            disp('You can enter any value in the dependent-variable position.')
             disp(' ')
-            x_f = input(['row vector : 1 by ' num2str(k_data) ' = ']);
+            x_f = input(['row vector: 1 by ' num2str(k_data) ' = ']);
         else
             x_f = [ ];
         end
                         
         disp(' ')
-        disp('Would you like to calculate Marginal Likelihood(Laplace Method)')
+        disp('Would you like to calculate the marginal likelihood (Laplace method)?')
         disp(' ')
-        ML = input('type Y or N : ','s');
+        ML = input('Type Y or N: ','s');
         disp(' ')
-        disp('Do you want to save your model into "TVP.mat" ?')
+        disp('Do you want to save your model as "TVP.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('TVP.mat','x_f','d','yind','x1ind','n','forecast','res_x','restriction','b0','B0','a0','d0','v0','R0','ML')
             disp(' ')
-            disp('Model is stored in file named  "TVP.mat"')
+            disp('Model saved as "TVP.mat"')
         end
         
     elseif load_hyper == 1
@@ -608,12 +608,12 @@ if Model == 3
     
     clc
     disp('===========================================================================================================');
-    disp('Model: Time_Varying_Parameter')
+    disp('Model: Time-Varying Parameter')
     disp('-----------------------------------------------------------------------------------------------------------');
     disp(['The dependent variable is the ' num2str(yind) 'th column of data.'])
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter:')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[b0, B0]= ')
     disp([b0 B0]);
@@ -623,7 +623,7 @@ if Model == 3
     disp(R0);
     disp('-----------------------------------------------------------------------------------------------------------');
     if ML == 'Y'
-        disp(['Log Marginal Likelihood: ' num2str(lnML) '(Laplace Method)'])
+        disp(['Log marginal likelihood: ' num2str(lnML) ' (Laplace method)'])
         % if isForecast == 1
         %     disp(['Log Posterior predictive density is  ', num2str(log(predlik))]);
         % end
@@ -632,9 +632,9 @@ if Model == 3
     min_p = min(postmom(:,8));
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke-p 값');
+    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke p');
     disp('===========================================================================================================');
     for i = 1:rows(xind)
         disp(['       beta ' num2str([xind(i,1) postmom_beta(i,2) postmom_beta(i,3) postmom_beta(i,4) postmom_beta(i,5) postmom_beta(i,6) postmom_beta(i,7) postmom_beta(i,8)])]);
@@ -647,13 +647,13 @@ if Model == 3
     r = [0; r(1:end - 1)] + 1;
     c(c == 0) = k_x1;
     ind_Omega =[c r];
-    disp('The element of Omega : ')
+    disp('Elements of Omega:')
     for i = 1:(k_x1^2)
         disp(['   Omega ' num2str(ind_Omega(i,:)) '      ' num2str([postmom_Omega(i,2) postmom_Omega(i,3) postmom_Omega(i,4) postmom_Omega(i,5) postmom_Omega(i,6) postmom_Omega(i,7) postmom_Omega(i,8)])]);
     end
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named  "TVP.mat"')
+        disp('Model saved as "TVP.mat"')
     end
     MHm_plot = [betam Sigmam];
     npara = cols(MHm_plot);
@@ -713,10 +713,10 @@ if Model == 4
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"AXK.mat" is founded"')
-        disp('Do you want to use the model in "AXK.mat" ?')
+        disp('"AXK.mat" was found.')
+        disp('Do you want to use the model saved in "AXK.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -728,14 +728,14 @@ if Model == 4
     
     if load_hyper == 0
         disp('===============================================')
-        disp('Model: ARMA-X(Kalman filter)')
+        disp('Model: ARMA-X (Kalman filter)')
         disp('===============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('y_t = x_t*beta + e_t')
         disp('e_t ~ ARMA(p,q), v_t | sigma2 ~ Normal(0,sigma2)')
-        disp('AR coef = phi(i), MA coef = theta(i)')
+        disp('AR coefficient = phi(i), MA coefficient = theta(i)')
         disp('When data_t = y_t, y_t ~ ARMA(p,q)')
         disp(' ')
         disp('beta ~ Normal(b0, B0)')
@@ -750,7 +750,7 @@ if Model == 4
         disp('d*sigma2 ~ InverseGamma(a0 / 2, d0 / 2)')
         disp('(a0: 1 by 1, d0: 1 by 1)')
         disp(' ')
-        disp('k: Number of Regressor')
+        disp('k: Number of regressors')
         k = cols(data);
         if k == 1
 %             x = 1;
@@ -759,7 +759,7 @@ if Model == 4
             k_reg = 3;
         else
             disp(' ')
-            disp('What column in the data matrix is the dependent variable?')
+            disp('Which column in the data matrix is the dependent variable?')
             disp(' ')
             x = input(' ');
             disp(' ')
@@ -775,7 +775,7 @@ if Model == 4
         disp(' ')
 %         model = cols(data);
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
 %         T = rows(data);
         if k == 1
@@ -798,38 +798,38 @@ if Model == 4
         a0 = input('a0: scalar = ');
         d0 = input('d0: scalar = ');
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
         disp('Do you want to forecast?')
         disp(' ')
-        forecast = input('type Y or N : ','s');
+        forecast = input('Type Y or N: ','s');
         disp(' ')
         if forecast == 'Y'
             if k == 1
                 x_f = 0;
             else
-                disp('What are the regressor values to be used in the forecast?')
+                disp('What regressor values should be used for the forecast?')
                 disp(' ')
-                x_f = input(['column vector : ' num2str(k_reg) ' by 1 = ']);
+                x_f = input(['column vector: ' num2str(k_reg) ' by 1 = ']);
             end
         else
             x_f = [ ];
         end
         disp(' ')
-        disp('Would you like to calculate Marginal Likelihood(Laplace Method)')
+        disp('Would you like to calculate the marginal likelihood (Laplace method)?')
         disp(' ')
-        ML = input('type Y or N : ','s');
+        ML = input('Type Y or N: ','s');
         disp(' ')
-        disp('Do you want to save your model into "AXK.mat" ?')
+        disp('Do you want to save your model as "AXK.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('AXK.mat','d','xind','yind','b0','B0','phi0','PHI0','theta0','THETA0','a0','d0','n','forecast','x_f','ML')
             disp(' ')
-            disp('Model is stored in file named  "AXK.mat"')
+            disp('Model saved as "AXK.mat"')
         end
     elseif load_hyper == 1
         Prior = load('AXK.mat');
@@ -881,12 +881,12 @@ if Model == 4
     
     clc
     disp('===========================================================================================================');
-    disp('Model: ARMA-X(Kalman filter)')
+    disp('Model: ARMA-X (Kalman filter)')
     disp('-----------------------------------------------------------------------------------------------------------');
     disp(['The dependent variable is the ' num2str(yind) 'th column of data.'])
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter: ')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[b0, B0]= ')
     disp([b0 B0]);
@@ -898,15 +898,15 @@ if Model == 4
     disp([a0 d0 d]);
     disp('-----------------------------------------------------------------------------------------------------------');
     if ML == 'Y'
-        disp(['Log Marginal Likelihood: ' num2str(lnML) '(Laplace Method)'])
+        disp(['Log marginal likelihood: ' num2str(lnML) ' (Laplace method)'])
     end
     max_ineff = max([postmom_b(:,7);postmom_phi_cons(:,7);postmom_phi(:,7);postmom_theta(:,7);postmom_sig2(:,7)]);
     min_p = min([postmom_b(:,8);postmom_phi_cons(:,8);postmom_phi(:,8);postmom_theta(:,8);postmom_sig2(:,8)]);
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke-p 값');
+    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke p');
     disp('===========================================================================================================');
     model = cols(data);
     if model > 1
@@ -930,7 +930,7 @@ if Model == 4
     disp(['       sigma2      ' num2str([postmom_sig2(1,2) postmom_sig2(1,3) postmom_sig2(1,4) postmom_sig2(1,5) postmom_sig2(1,6) postmom_sig2(1,7) postmom_sig2(1,8)])]);
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named  "AXK.mat"')
+        disp('Model saved as "AXK.mat"')
     end
     if model == 1
         MHm = [phi_consm phim thetam sig2m]; 
@@ -1014,10 +1014,10 @@ if Model == 5
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"SV.mat" is founded"')
-        disp('Do you want to use the model in "SV.mat" ?')
+        disp('"SV.mat" was found.')
+        disp('Do you want to use the model saved in "SV.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -1033,7 +1033,7 @@ if Model == 5
         disp('Model: Stochastic Volatility')
         disp('=============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('y_t = x_t*beta + exp(h_(t)/2)*e_t')
         disp('(e_t ~ N(O,1))')
@@ -1050,9 +1050,9 @@ if Model == 5
         disp('d*sig2 ~ InverseGamma(v0, d0)')
         disp('(v0: scalar, d0: scalar)')
         disp(' ')
-        disp('k: Number of regressor')
+        disp('k: Number of regressors')
         disp(' ')
-        disp('What column in the data matrix is the dependent variable?')
+        disp('Which column in the data matrix is the dependent variable?')
         disp(' ')
         x = input(' ');
         
@@ -1071,13 +1071,13 @@ if Model == 5
         disp(' ')
         
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         
         b0 = input(['b0: ' num2str(k_reg) ' by 1 = ']);
         B0 = input(['B0: ' num2str(k_reg) ' by ' num2str(k_reg) ' = ']);
         disp(' ')
-        disp('p: The maximum lag length of h_(t) that the researcher thinks.')
+        disp('p: The maximum lag length of h_(t).')
         disp(' ')
         gamma0 = input('gamma0: p+1 by 1 = ');
         Gamma0 = input('Gamma0: p+1 by p+1 = ');
@@ -1085,35 +1085,35 @@ if Model == 5
         v0 = input('v0: scalar = ');
         d0 = input('d0: scalar = ');
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
         disp('Do you want to forecast?')
         disp(' ')
-        forecast = input('type Y or N : ','s');
+        forecast = input('Type Y or N: ','s');
         disp(' ')
         if forecast == 'Y'
-            disp('What are the regressor values to be used in the forecast?')
+            disp('What regressor values should be used for the forecast?')
             disp(' ')
-            x_f = input(['column vector : ' num2str(k_reg) ' by 1 = ']);
+            x_f = input(['column vector: ' num2str(k_reg) ' by 1 = ']);
         else
             x_f = [ ];
         end
         
         disp(' ')
-        disp('Would you like to calculate Marginal Likelihood(Laplace Method)')
+        disp('Would you like to calculate the marginal likelihood (Laplace method)?')
         disp(' ')
-        ML = input('type Y or N : ','s');
+        ML = input('Type Y or N: ','s');
         disp(' ')
-        disp('Do you want to save your model into "SV.mat" ?')
+        disp('Do you want to save your model as "SV.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('SV.mat','d','x_f','x','n','forecast','b0','B0','v0','d0','gamma0','Gamma0','ML')
             disp(' ')
-            disp('Model is stored in file named  "SV.mat"')
+            disp('Model saved as "SV.mat"')
         end
     elseif load_hyper == 1
         Prior = load('SV.mat');
@@ -1160,12 +1160,12 @@ if Model == 5
     
     clc
     disp('===========================================================================================================');
-    disp('Model: Stochastic_Volatility')
+    disp('Model: Stochastic Volatility')
     disp('-----------------------------------------------------------------------------------------------------------');
     disp(['The dependent variable is the ' num2str(yind) 'th column of data.'])
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter:')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[b0, B0]= ')
     disp([b0 B0]);
@@ -1175,7 +1175,7 @@ if Model == 5
     disp([v0 d0 d]);
     disp('-----------------------------------------------------------------------------------------------------------');
     if ML == 'Y'
-        disp(['Log Marginal Likelihood: ' num2str(lnML) '(Laplace Method)'])
+        disp(['Log marginal likelihood: ' num2str(lnML) ' (Laplace method)'])
         % if isForecast == 1
         %     disp(['Log Posterior predictive density is  ', num2str(log(predlik))]);
         % end
@@ -1184,9 +1184,9 @@ if Model == 5
     min_p = min(postmom(:,8));
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke-p 값');
+    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke p');
     disp('===========================================================================================================');
     for i = 1:cols(xind)
         disp(['       beta ' num2str([xind(1,i) postmom(i,2) postmom(i,3) postmom(i,4) postmom(i,5) postmom(i,6) postmom(i,7) postmom(i,8)])]);
@@ -1200,7 +1200,7 @@ if Model == 5
     disp(['       sigma2      ' num2str([postmom(end,2) postmom(end,3) postmom(end,4) postmom(end,5) postmom(end,6) postmom(end,7) postmom(end,8)])]);
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named  "SV.mat"')
+        disp('Model saved as "SV.mat"')
     end
     
     T = rows(Y);

@@ -7,7 +7,7 @@ k = rows(mu);
 [L,err] = cholmod(Omega);
 
 if err == 1
-    fprintf('cholesky failed in proposal step. retaining current block');
+    fprintf('Cholesky decomposition failed in the proposal step. Retaining the current block.\n');
     z = 0;
 else
     x = L'*randn(k,1);

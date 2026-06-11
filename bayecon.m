@@ -9,7 +9,7 @@ addpath(genpath(folder),'-begin');
 
 disp(' ')
 disp('/////////////////////////////////////////////')
-disp('////////Bayesian Econometrics ToolBox////////')
+disp('////////Bayesian Econometrics Toolbox////////')
 disp('/////////////////////////////////////////////')
 disp('Email : econ.preference@gmail.com ')
 disp(' ')

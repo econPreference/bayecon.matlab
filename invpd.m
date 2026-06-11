@@ -9,7 +9,7 @@ function [Ainv,err] = invpd(A)
 	[m,n] = size(A);
     err = 0;
     if m~=n
-        	disp('matrix A  is not square');
+            disp('Matrix A is not square.');
             err = 1;
             Ainv = [];
         	return

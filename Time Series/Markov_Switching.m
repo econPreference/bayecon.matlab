@@ -42,7 +42,7 @@ P = zeros(s,s);
 P_para = P;
 %% �ʱⰪ
 disp(' ')
-disp('Setting initial Value...Please wait...')
+disp('Setting initial values. Please wait...')
 disp(' ')
 if switchingind == 2
     b = kron(ones(1,s),beta0);
@@ -135,21 +135,21 @@ for iter = 1:n
             disp(betaiden*b)
             disp(' ')
             for i = 1:s
-                fprintf('The share of state %G : %G\n',i,sum(S==i)/T);
+                fprintf('Share of state %G: %G\n',i,sum(S==i)/T);
             end
         elseif idenind == 2
             disp('[sig2: ]')
             disp(sig2')
             disp(' ')
             for i = 1:s
-                fprintf('The share of state %G : %G\n',i,sum(S==i)/T);
+                fprintf('Share of state %G: %G\n',i,sum(S==i)/T);
             end
         elseif idenind == 3
-            disp('[Transition Martix P: ]' )
+            disp('[Transition Matrix P:]' )
             disp(P)
             disp(' ')
             for i = 1:s
-                fprintf('The share of state %G : %G\n',i,sum(S==i)/T);
+                fprintf('Share of state %G: %G\n',i,sum(S==i)/T);
             end
         end
     end
@@ -245,8 +245,8 @@ for iter = 1:n
     end
 end
 
-disp('Sampling Complete')
-disp('Reading Result...Please wait...')
+disp('Sampling complete.')
+disp('Reading results. Please wait...')
 
 betam_ = betam(:,:,1);
 for i = 2:s

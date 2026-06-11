@@ -69,7 +69,7 @@ logpost = 0;
 % Calculating Normalization constant of phi
 
 disp(' ')
-disp('Calculating Normalization constant...')
+disp('Calculating normalization constant...')
 disp(' ')
 
 box.phi0 = phi0;
@@ -89,7 +89,7 @@ for iter = 1:n
     if resid == 0
         clc
         disp('=====================================')
-        disp('Under H1 : It is I(0) process        ')
+        disp('Under H1: this is an I(0) process.')
         fprintf('Current iteration: %G\n',iter);
         disp('=====================================')
         disp(' ')

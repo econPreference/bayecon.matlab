@@ -4,19 +4,20 @@ clc
 format shortG
 disp(' ')
 disp('/////////////////////////////////////////////')
-disp('////////Bayesian Econometrics ToolBox////////')
+disp('////////Bayesian Econometrics Toolbox////////')
 disp('/////////////////////////////////////////////')
 disp(' ')
 disp('Model: Variable Selection')
 disp('====================Model====================')
 disp('1. Absolutely Continuous Spikes')
-disp('2. Dirac Spike - g prior')
+disp('2. Dirac Spike - g Prior')
 disp('=============================================')
 disp('Important Note for model 2: ')
-disp('!!Do not include constant term in your regressor!!')
+disp('Do not include a constant term in your data matrix.')
+disp('You will be asked later whether to include a constant term.')
 disp(' ')
-disp('Note: For setting "g" in g prior')
-disp('      I follow recommendations from Fernandez, Ley, and Steel(2001)')
+disp('Note: To set "g" in the g prior')
+disp('      I follow recommendations from Fernandez, Ley, and Steel (2001)')
 
 disp(' ')
 disp('Which model would you like to choose?')
@@ -29,10 +30,10 @@ if Model == 1
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"VS_AC.mat" is founded"')
-        disp('Do you want to use the model in "VS_AC.mat" ?')
+        disp('"VS_AC.mat" was found.')
+        disp('Do you want to use the model saved in "VS_AC.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -48,7 +49,7 @@ if Model == 1
         disp('Model: Absolutely Continuous Spikes in VS    ')
         disp('=============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('Y | X,theta ~ Normal(X_1*b_1 + ... + X_k*b_k, sigma2 * I(T,T))')
         disp(' ')
@@ -63,26 +64,26 @@ if Model == 1
         disp('b_i | gamma_i,sig2_0,sig2_1')
         disp(' ~ 1(gamma_i = 0)*Normal(0, sig2_0) + 1(gamma_i = 1)*Normal(0, sig2_1)')
         disp(' ')
-        disp('T: Number of observations, k: Number of Regressor')
+        disp('T: Number of observations, k: Number of regressors')
         disp(' ')
-        disp('What column in the data matrix is the dependent variable?')
+        disp('Which column in the data matrix is the dependent variable?')
         disp(' ')
         x = input(' ');
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         alpha0 = input('alpha0: scalar = ');
         delta0 = input('delta0: scalar = ');
         disp(' ')
-        disp('E(sig2_0) = d0/v0, So set d0/v0 sufficiently small')
+        disp('E(sig2_0) = d0/v0, so set d0/v0 sufficiently small.')
         v0 = input('v0: scalar = ');
         d0 = input('d0: scalar = ');
         disp(' ')
-        disp('E(sig2_1) = d1/v1, So set d1/v1 sufficiently large')
+        disp('E(sig2_1) = d1/v1, so set d1/v1 sufficiently large.')
         v1 = input('v1: scalar = ');
         d1 = input('d1: scalar = ');
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
@@ -99,23 +100,23 @@ if Model == 1
         
         disp('Do you want to forecast?')
         disp(' ')
-        forecast = input('type Y or N : ','s');
+        forecast = input('Type Y or N: ','s');
         disp(' ')
         if forecast == 'Y'
-            disp('What are the regressor values to be used in the forecast?')
+            disp('What regressor values should be used for the forecast?')
             disp(' ')
-            x_f = input(['column vector : ' num2str(k_reg) ' by 1 = ']);
+            x_f = input(['column vector: ' num2str(k_reg) ' by 1 = ']);
         elseif forecast == 'N'
             x_f = [ ];
         end
         disp(' ')
-        disp('Do you want to save your model into "VS_AC.mat" ?')
+        disp('Do you want to save your model as "VS_AC.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('VS_AC.mat','x','alpha0','delta0','v0','d0','v1','d1','n','forecast','x_f')
             disp(' ')
-            disp('Model is stored in file named "VS_AC.mat"')
+            disp('Model saved as "VS_AC.mat"')
         end
     elseif load_hyper == 1
         Prior = load('VS_AC.mat');
@@ -177,7 +178,7 @@ if Model == 1
     end
     disp(' ')
     if save_mat == 'Y'
-        disp('Model is stored in file named "VS_AC.mat"')
+        disp('Model saved as "VS_AC.mat"')
     end
     
 elseif Model == 2
@@ -187,10 +188,10 @@ elseif Model == 2
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"VS_D.mat" is founded"')
-        disp('Do you want to use the model in "VS_D.mat" ?')
+        disp('"VS_D.mat" was found.')
+        disp('Do you want to use the model saved in "VS_D.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -206,39 +207,39 @@ elseif Model == 2
         disp('Model: Dirac Spike in VS                     ')
         disp('=============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('Y | X,theta ~ Normal(mu + X_1*a_1 + ... + X_d*a_d, sigma2 * I(N,N))')
         disp(' ')
         disp('mu, sigma2 ~ Jeffrey(1/sigma2)')
         disp(' ')
         disp('omega ~ Beta(aw,bw)')
-        disp('where, omega = Prob(Significant regressor|omega)')
+        disp('where omega = Prob(significant regressor | omega)')
         disp(' ')
         disp('{a_i}| theta ')
         disp(' ~ (g prior together for significant)*(dirac separately for insignificant)')
         disp(' ')
-        disp('N: Number of observations, d: Number of Regressor except constant')
+        disp('N: Number of observations, d: Number of regressors excluding the constant')
         disp(' ')
-        disp('What column in the data matrix is the dependent variable?')
+        disp('Which column in the data matrix is the dependent variable?')
         disp(' ')
         x = input(' ');
         disp(' ')
-        disp('Do you want to include constant term as regressor?')
+        disp('Do you want to include a constant term as a regressor?')
         disp(' ')
-        aux = input('type Y or N : ','s');
+        aux = input('Type Y or N: ','s');
         if aux == 'Y'
             cons_option = 1;
         else
             cons_option = 0;
         end
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         aw = input('aw: scalar = ');
         bw = input('bw: scalar = ');
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
@@ -253,13 +254,13 @@ elseif Model == 2
         X = data(:,xind);
         
         disp(' ')
-        disp('Do you want to save your model into "VS_D.mat" ?')
+        disp('Do you want to save your model as "VS_D.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('VS_D.mat','x','cons_option','aw','bw','n')
             disp(' ')
-            disp('Model is stored in file named "VS_D.mat"')
+            disp('Model saved as "VS_D.mat"')
         end
     elseif load_hyper == 1
         Prior = load('VS_D.mat');
@@ -304,7 +305,7 @@ elseif Model == 2
     
     disp(' ')
     if save_mat == 'Y'
-        disp('Model is stored in file named "VS_D.mat"')
+        disp('Model saved as "VS_D.mat"')
     end
     
 end

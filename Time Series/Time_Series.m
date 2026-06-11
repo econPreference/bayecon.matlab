@@ -3,14 +3,14 @@ clc
 format shortG
 disp(' ')
 disp('/////////////////////////////////////////////')
-disp('////////Bayesian Econometrics ToolBox////////')
+disp('////////Bayesian Econometrics Toolbox////////')
 disp('/////////////////////////////////////////////')
 disp(' ')
 disp('Model: Time Series')
 disp('====================Model====================')
 disp('1. Bayesian Unit-Root Test')
 disp('2. Principal Component Analysis')
-disp('3. Linear Regression(Autocorrelation,MCMC)')
+disp('3. Linear Regression (Autocorrelation, MCMC)')
 disp('4. Unrestricted BVAR Model')
 disp('5. Impulse-Response Analysis')
 disp('6. Markov Switching Model')
@@ -18,8 +18,8 @@ disp('6. Markov Switching Model')
 % disp('8. Markov Switching Impulse-Response Analysis')
 disp('=============================================')
 disp('NOTE: In the case of 4 or 5, we automatically assume')
-disp('constant or non-constant, repectively.')
-disp('So, DONT PUT CONSTANT TERM IN YOUR INPUT in the case of 4 or 5')
+disp('a constant term and no constant term, respectively.')
+disp('So, do not include a constant term in your input for model 4 or 5.')
 disp(' ')
 disp('Which model would you like to choose?')
 disp(' ')
@@ -32,61 +32,61 @@ if Model == 1
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"UR.mat" is founded"')
-        disp('Do you want to use the model in "UR.mat" ?')
+        disp('"UR.mat" was found.')
+        disp('Do you want to use the model saved in "UR.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
             disp(' ')
-            disp('Do you want to use default setting?')
+            disp('Do you want to use the default setting?')
             disp(' ')
-            UR_setting = input('type Y or N : ','s');
+            UR_setting = input('Type Y or N: ','s');
             disp(' ')
             if UR_setting == 'N'
                 load_hyper = 0;
             else
                 load_hyper = 2;
                 disp('=================================')
-                disp('Choose the case')
+                disp('Choose a case')
                 disp('---------------------------------')
-                disp('Case 1. without constant')
-                disp('Case 2. with constant')
-                disp('Case 4. with constant and drift')
+                disp('Case 1. without a constant')
+                disp('Case 2. with a constant')
+                disp('Case 4. with a constant and drift')
                 disp('=================================')
                 disp(' ')
-                setting_case = input('type the case number : ');
+                setting_case = input('Type the case number: ');
             end
         end
     elseif test == 1
-        disp('Do you want to use default setting?')
+        disp('Do you want to use the default setting?')
         disp(' ')
-        UR_setting = input('type Y or N : ','s');
+        UR_setting = input('Type Y or N: ','s');
         disp(' ')
         if UR_setting == 'N'
             load_hyper = 0;
         else
             load_hyper = 2;
             disp('=================================')
-            disp('Choose the case')
+            disp('Choose a case')
             disp('---------------------------------')
-            disp('Case 1. without constant')
-            disp('Case 2. with constant')
-            disp('Case 4. with constant and drift')
+            disp('Case 1. without a constant')
+            disp('Case 2. with a constant')
+            disp('Case 4. with a constant and drift')
             disp('=================================')
             disp(' ')
-            setting_case = input('type the case number : ');
+            setting_case = input('Type the case number: ');
         end
     end
     
     if load_hyper == 0
         clc
         disp('===============================================')
-        disp('Model: Unit root test')
+        disp('Model: Unit Root Test')
         disp('===============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('y_t = c0*t^0 +...+ cs*t^s + y_t-1*beta + error_t')
         disp(' ')
@@ -107,18 +107,19 @@ if Model == 1
         disp(' ')
         
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         disp('* Default values: v = 1 and k = 1 or 2 or higher integer ')
         disp(' ')
         kk = input('k: scalar = ');
         vv = input('v: scalar = ');
         disp(' ')
-        disp('Under H1: beta ~= 1, what is the mode of beta prior ?')
+        disp('Under H1 (beta ~= 1), what is the mode of the beta prior?')
         disp(' ')
         mode = input('mode of beta prior: scalar = ');
         disp(' ')
-        disp('Proposal of beta is Truncated N[a,b](mode,1). What is a,b ?')
+        disp('The proposal distribution for beta is Truncated N[a,b](mode,1).')
+        disp('What are a and b?')
         disp(' ')
         ab = input('[a b] = ');
         a = ab(1,1);
@@ -129,7 +130,7 @@ if Model == 1
         disp(' ')
         q = input('q: scalar = ');
         disp(' ')
-        disp('Set the deterministic trend by select length of c0')
+        disp('Set the deterministic trend by selecting the length of c0.')
         disp(' ')
         c0 = input('c0: s+1 by 1 = ');
         C0 = input('C0: s+1 by s+1 = ');
@@ -137,7 +138,7 @@ if Model == 1
         a0 = input('a0: scalar = ');
         d0 = input('d0: scalar = ');
         disp(' ')
-        disp('p: The maximum lag length of the error term that the researcher thinks.')
+        disp('p: The maximum lag length of the error term.')
         disp(' ')
         disp('Under H0')
         phi0_H0 = input('phi0: p by 1 = ');
@@ -147,19 +148,19 @@ if Model == 1
         phi0_H1 = input('phi0: p by 1 = ');
         PHI0_H1 = input('PHI0: p by p = ');
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
-        disp('Do you want to save your model into "UR.mat" ?')
+        disp('Do you want to save your model as "UR.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('UR.mat','kk','vv','phi0_H0','PHI0_H0','a0','d0','n',...
                 'c0','C0','q','a','b','phi0_H1','PHI0_H1','mode')
             disp(' ')
-            disp('Model is stored in file named  "UR.mat"')
+            disp('Model saved as "UR.mat"')
         end
         
     elseif load_hyper == 1
@@ -281,7 +282,7 @@ if Model == 1
     disp('-----------------------------------------------------------------------------------------------------------');
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter: ')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[k, v, mode, q]= ')
     disp([kk vv mode q]);
@@ -294,7 +295,7 @@ if Model == 1
     disp('[a0, d0]= ')
     disp([a0 d0]);
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('[Log of Marginal Likelihood(Sims, Waggoner and Zha, 2008): ]')
+    disp('[Log marginal likelihood (Sims, Waggoner, and Zha, 2008):]')
     disp([' 1. H0: beta == 1: ' num2str(double(log(ML_Re)))])
     disp([' 2. H1: beta ~= 1: ' num2str(double(log(ML_Un)))])
     disp('-----------------------------------------------------------------------------------------------------------');
@@ -305,9 +306,9 @@ if Model == 1
     min_p = min(postmom(:,7));
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke-p °ª');
+    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke p');
     disp('===========================================================================================================');
     disp('Main equation: ')
     disp(['         beta     ' num2str([postmom(1,2) postmom(1,3) postmom(1,4) postmom(1,5) postmom(1,6) postmom(1,7) postmom(1,8)])]);
@@ -323,19 +324,19 @@ if Model == 1
     disp(['       sigma2     ' num2str([postmom(end,2) postmom(end,3) postmom(end,4) postmom(end,5) postmom(end,6) postmom(end,7) postmom(end,8)])]);
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named  "UR.mat"')
+        disp('Model saved as "UR.mat"')
     end
     MHm = [bm cm phim sig2m];
     
-    npara = cols(MHm); % ÆÄ¶ó¸ÞÅÍÀÇ ¼ö
+    npara = cols(MHm); % ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
     m1 = round(sqrt(npara));
     m2 = ceil(sqrt(npara));
     
     for i = 1:npara
         subplot(m1, m2, i);
         para = MHm(:, i);
-        minp = minc(para); % ÃÖ¼Ò
-        maxp = maxc(para); % ÃÖ´ë
+        minp = minc(para); % ï¿½Ö¼ï¿½
+        maxp = maxc(para); % ï¿½Ö´ï¿½
         intvl = (maxp - minp)/50;
         interval = minp:intvl:maxp;
         [density,xi]=ksdensity(para);
@@ -366,10 +367,10 @@ if Model == 3
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"LRA.mat" is founded"')
-        disp('Do you want to use the model in "LRA.mat" ?')
+        disp('"LRA.mat" was found.')
+        disp('Do you want to use the model saved in "LRA.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -381,10 +382,10 @@ if Model == 3
     
     if load_hyper == 0
         disp('===============================================')
-        disp('Model: Linear Regression(Autocorrelation,MCMC)')
+        disp('Model: Linear Regression (Autocorrelation, MCMC)')
         disp('===============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('y_t = x_t*beta + error_t')
         disp('error_t = phi_1*error_t-1 + ... + phi_p*error_t-p + white noise')
@@ -400,14 +401,14 @@ if Model == 3
         disp('sigma2 ~ InverseGamma(a0 / 2, d0 / 2)')
         disp('(a0: 1 by 1, d0: 1 by 1)')
         disp(' ')
-        disp('k: Number of Regressor')
+        disp('k: Number of regressors')
         disp(' ')
         k = cols(data);
         if k == 1
             xind = 1;
             yind = 1;
         else
-            disp('What column in the data matrix is the dependent variable?')
+            disp('Which column in the data matrix is the dependent variable?')
             disp(' ')
             x = input(' ');
             disp(' ')
@@ -419,7 +420,7 @@ if Model == 3
         end
         
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         if k == 1
             disp('Constant term prior ~ N(b0,B0)')
@@ -431,46 +432,46 @@ if Model == 3
         end
         
         disp(' ')
-        disp('p: The maximum lag length of the error term that the researcher thinks.')
+        disp('p: The maximum lag length of the error term.')
         disp(' ')
         phi0 = input('phi0: p by 1 = ');
         PHI0 = input('PHI0: p by p = ');
         a0 = input('a0: scalar = ');
         d0 = input('d0: scalar = ');
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
         disp('Do you want to forecast?')
         disp(' ')
-        forecast = input('type Y or N : ','s');
+        forecast = input('Type Y or N: ','s');
         disp(' ')
         if forecast == 'Y'
             if k == 1
                 x_f = 0;
             else
-                disp('What are the regressor values to be used in the forecast?')
+                disp('What regressor values should be used for the forecast?')
                 disp(' ')
-                x_f = input(['column vector : ' num2str(k_reg) ' by 1 = ']);
+                x_f = input(['column vector: ' num2str(k_reg) ' by 1 = ']);
             end
         else
             x_f = [ ];
         end
         disp(' ')
-        disp('Would you like to calculate Marginal Likelihood(Laplace Method)')
+        disp('Would you like to calculate the marginal likelihood (Laplace method)?')
         disp('Note: Speed of computation is very slow.')
         disp(' ')
-        ML = input('type Y or N : ','s');
+        ML = input('Type Y or N: ','s');
         disp(' ')
-        disp('Do you want to save your model into "LRA.mat" ?')
+        disp('Do you want to save your model as "LRA.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('LRA.mat','xind','yind','b0','B0','phi0','PHI0','a0','d0','n','forecast','x_f','ML')
             disp(' ')
-            disp('Model is stored in file named  "LRA.mat"')
+            disp('Model saved as "LRA.mat"')
         end
         
     elseif load_hyper == 1
@@ -514,12 +515,12 @@ if Model == 3
     
     clc
     disp('===========================================================================================================');
-    disp('Model: Linear Regression(Autocorrelation,MCMC)')
+    disp('Model: Linear Regression (Autocorrelation, MCMC)')
     disp('-----------------------------------------------------------------------------------------------------------');
     disp(['The dependent variable is the ' num2str(yind) 'th column of data.'])
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter: ')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[b0, B0]= ')
     disp([b0 B0]);
@@ -529,15 +530,15 @@ if Model == 3
     disp([a0 d0]);
     disp('-----------------------------------------------------------------------------------------------------------');
     if ML == 'Y'
-        disp(['Log Marginal Likelihood: ' num2str(lnML) '(Laplace Method)'])
+        disp(['Log marginal likelihood: ' num2str(lnML) ' (Laplace method)'])
     end
     max_ineff = max(postmom(:,7));
     min_p = min(postmom(:,7));
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke-p °ª');
+    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff    Geweke p');
     disp('===========================================================================================================');
     disp('Estimates of beta: ')
     if model == 1
@@ -556,20 +557,20 @@ if Model == 3
     disp(['       sigma2     ' num2str([postmom(end,2) postmom(end,3) postmom(end,4) postmom(end,5) postmom(end,6) postmom(end,7) postmom(end,8)])]);
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named  "LRA.mat"')
+        disp('Model saved as "LRA.mat"')
     end
     
     MHm = [bm phim sig2m];
     
-    npara = cols(MHm); % ÆÄ¶ó¸ÞÅÍÀÇ ¼ö
+    npara = cols(MHm); % ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
     m1 = round(sqrt(npara));
     m2 = ceil(sqrt(npara));
     
     for i = 1:npara
         subplot(m1, m2, i);
         para = MHm(:, i);
-        minp = minc(para); % ÃÖ¼Ò
-        maxp = maxc(para); % ÃÖ´ë
+        minp = minc(para); % ï¿½Ö¼ï¿½
+        maxp = maxc(para); % ï¿½Ö´ï¿½
         intvl = (maxp - minp)/50;
         interval = minp:intvl:maxp;
         [density,xi]=ksdensity(para);
@@ -618,10 +619,10 @@ if Model == 4
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"UBVAR.mat" is founded"')
-        disp('Do you want to use the model in "UBVAR.mat" ?')
+        disp('"UBVAR.mat" was found.')
+        disp('Do you want to use the model saved in "UBVAR.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -637,7 +638,7 @@ if Model == 4
         disp('Model: Unrestricted BVAR Model')
         disp('=============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('Y_(t) = Cons + Phi(1)*Y_(t-1) + ... + Phi(p)*Y_(t-p) + error')
         disp('(error ~ N(O,Omega)), Cons:Constant term')
@@ -649,15 +650,15 @@ if Model == 4
         disp('inv(Omega) ~ Wishart(v0, R0)')
         disp('(v0: scalar, R0: k by k)')
         disp(' ')
-        disp('k: Number of dependent')
+        disp('k: Number of dependent variables')
         disp(' ')
-        disp('p: The maximum lag length of dependent var that the researcher thinks.')
+        disp('p: The maximum lag length of the dependent variable.')
         disp(' ')
         k = cols(data);
-        p = input('What is value of p : scalar = ');
+        p = input('p: scalar = ');
         disp(' ')
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         phi = zeros(k,k,p);
         B_diag = zeros(k,k,p);
@@ -686,32 +687,32 @@ if Model == 4
         v0 = input('v0: scalar = ');
         R0 = input(['R0: ' num2str(k) ' by ' num2str(k) ' = ']);
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
         if k > 2
-            disp('In forecasting, Which two variables would you want to draw the bivariate probability density?')
-            disp('Enter the column number of the vars in the data')
+            disp('In forecasting, which two variables do you want to use for the bivariate predictive density plot?')
+            disp('Enter the column numbers of the variables in the data.')
             disp(' ')
-            forecast = input(' 1 by 2 row vector = ');
+            forecast = input('1 by 2 row vector = ');
             disp(' ')
         elseif k==2
             forecast = [1 2];
         end
         disp(' ')
-        disp('Would you like to calculate Marginal Likelihood(Laplace Method)')
+        disp('Would you like to calculate the marginal likelihood (Laplace method)?')
         disp(' ')
-        ML = input('type Y or N : ','s');
+        ML = input('Type Y or N: ','s');
         disp(' ')
-        disp('Do you want to save your model into "UBVAR.mat" ?')
+        disp('Do you want to save your model as "UBVAR.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('UBVAR.mat','n','forecast','p','b0','B0','v0','R0','ML')
             disp(' ')
-            disp('Model is stored in file named  "UBVAR.mat"')
+            disp('Model saved as "UBVAR.mat"')
         end
     elseif load_hyper == 1
         Prior = load('UBVAR.mat');
@@ -763,10 +764,10 @@ if Model == 4
     disp('===========================================================================================================');
     disp('Model: Unrestricted BVAR Model')
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp(['Maximum lag length : ' num2str(p)])
+    disp(['Maximum lag length: ' num2str(p)])
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
-    disp('-----------------------------------------------------------------------------------------------------------');disp('Hyper Parameter:')
-    disp('Hyper Parameter:')
+    disp('-----------------------------------------------------------------------------------------------------------');disp('Hyperparameters: ')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[Cons phi(1) phi(2) ... phi(p)] = ')
     disp(reshape(b0,p*k+1,k)');
@@ -778,7 +779,7 @@ if Model == 4
     disp(R0)
     disp('-----------------------------------------------------------------------------------------------------------');
     if ML == 'Y'
-        disp(['Log Marginal Likelihood: ' num2str(lnML) '(Laplace Method)'])
+        disp(['Log marginal likelihood: ' num2str(lnML) ' (Laplace method)'])
     end
     %     ind = reshape(1:(k^2),k,k)';
     %     if p > 1
@@ -792,9 +793,9 @@ if Model == 4
     min_p = min([postmom_cons(:,8);postmom_beta(:,8);postmom_Omega(:,8)]);
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff     Geweke-p °ª');
+    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff     Geweke p');
     disp('===========================================================================================================');
     disp('Constant term : ')
     for i = 1:k
@@ -809,7 +810,7 @@ if Model == 4
     indind = [c r];
     for i = 1:p
         postmom_beta_p = postmom_beta((k^2)*(i-1) + 1: (k^2)*i,:);
-        disp(['The element of phi(lag = ' num2str(i) ') :'])
+        disp(['Elements of phi (lag = ' num2str(i) '):'])
         for j = 1:(k^2)
             disp(['     phi ' num2str(indind(j,:)) '     ' num2str([postmom_beta_p(j,2) postmom_beta_p(j,3) postmom_beta_p(j,4) postmom_beta_p(j,5) postmom_beta_p(j,6) postmom_beta_p(j,7) postmom_beta_p(j,8)])]);
         end
@@ -821,13 +822,13 @@ if Model == 4
     r = [0; r(1:end - 1)] + 1;
     c(c == 0) = k;
     ind_Omega =[c r];
-    disp('The element of Omega : ')
+    disp('Elements of Omega:')
     for i = 1:(k^2)
         disp(['   Omega ' num2str(ind_Omega(i,:)) '      ' num2str([postmom_Omega(i,2) postmom_Omega(i,3) postmom_Omega(i,4) postmom_Omega(i,5) postmom_Omega(i,6) postmom_Omega(i,7) postmom_Omega(i,8)])]);
     end
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named  "UBVAR.mat"')
+        disp('Model saved as "UBVAR.mat"')
     end
 end
 
@@ -837,10 +838,10 @@ if Model == 5
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"IRA.mat" is founded"')
-        disp('Do you want to use the model in "IRA.mat" ?')
+        disp('"IRA.mat" was found.')
+        disp('Do you want to use the model saved in "IRA.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -856,7 +857,7 @@ if Model == 5
         disp('Model: Impulse-Response Analysis')
         disp('=================================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('Structure form: ')
         disp('B*Y_(t) = Cons + Gamma(1)*Y_(t-1) + ... + Gamma(p)*Y_(t-p) + error')
@@ -873,44 +874,50 @@ if Model == 5
         disp('inv(Omega) ~ Wishart(v0, R0)')
         disp('(v0: scalar, R0: k by k)')
         disp(' ')
-        disp('k: Number of dependent')
+        disp('k: Number of dependent variables')
         disp(' ')
-        disp('p: The maximum lag length of dependent var that the researcher thinks.')
+        disp('p: The maximum lag length of the dependent variable.')
         disp(' ')
         k = cols(data);
-        p = input('What is value of p : scalar = ');
+        p = input('p: scalar = ');
         disp(' ')
         disp('[Restriction for Identification]')
         disp('1. Recursive Restrictions')
         disp('2. Long-run Restrictions(Blanchard and Quah, 1989)')
         disp('3. Other Short-run Restrictions')
         disp(' ')
-        restriction = input('Type 1, 2 or 3 : ');
+        restriction = input('Type 1, 2, or 3: ');
         help_restriction = ('1: Recursive, 2: Long, 3: Short');
         if restriction == 3
             disp(' ')
-            disp('[What is restriction on B inverse ?]')
+            disp('[Restriction on B inverse]')
+            disp(['Number of required zero restrictions: ' num2str(k^2 - k*(k+1)/2)])
             disp('(Example.)')
-            disp('restriction X = [ 11 12 0; 0 22 23; 31 0 33]')
-            disp('vec(X) = [11 0 31 12 22 0 0 23 33]')
-            disp('Then, res_index = [1;3;4;5;8;9]')
+            disp('Let X = inv(B), and let Xij denote the (i,j) element of X.')
+            disp('Use 0 for zero restrictions.')
+            disp('Example zero restriction: X = [X11 X12 0; 0 X22 X23; X31 0 X33]')
+            disp('vec(X) = [X11; 0; X31; X12; X22; 0; 0; X23; X33]')
+            disp('The unrestricted elements are in positions 1, 3, 4, 5, 8, and 9.')
+            disp('So, chol_index = [1; 3; 4; 5; 8; 9]')
             disp(' ')
             resindex = input(['chol_index : ' num2str(k*(k+1)/2) ' by 1 = ']);
             ind_chol = ones(k,1);
         else
             disp(' ')
-            disp('[Define form of Cholesky Decomposition]')
-            disp('chol(X).*ind_chol is the result of decomposition that is Upper Triangular Matrix')
-            disp('The element of ind_chol can be only 1 or -1.')
+            disp('[Sign normalization]')
+            disp('Cholesky-based identification determines each shock only up to sign.')
+            disp('We use chol(X).*ind_chol as the result of the Cholesky decomposition, where chol(X).*ind_chol is an upper-triangular matrix.')
+            disp('Each element of ind_chol must be either 1 or -1.')
+            disp('(1: keeps the sign, -1: flips the sign.)')
             disp(' ')
-            ind_chol = input(['ind_chol : ' num2str(k) ' by 1 = ']);
+            ind_chol = input(['ind_chol: ' num2str(k) ' by 1 = ']);
             resindex = 1;
         end
         disp(' ')
-        disp('What is length of Impulse-Response-Analysis')
+        disp('What is the length of the impulse-response analysis?')
         mlag = input('scalar = ');
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
         phi = zeros(k,k,p);
         B_diag = zeros(k,k,p);
@@ -936,22 +943,22 @@ if Model == 5
         v0 = input('v0: scalar = ');
         R0 = input(['R0: ' num2str(k) ' by ' num2str(k) ' = ']);
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
-        disp('Would you like to calculate Marginal Likelihood(Laplace Method)')
+        disp('Would you like to calculate the marginal likelihood (Laplace method)?')
         disp(' ')
-        ML = input('type Y or N : ','s');
+        ML = input('Type Y or N: ','s');
         disp(' ')
-        disp('Do you want to save your model into "IRA.mat" ?')
+        disp('Do you want to save your model as "IRA.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             save('IRA.mat','n','p','b0','B0','v0','R0','mlag','ML','help_restriction','restriction','resindex','ind_chol')
             disp(' ')
-            disp('Model is stored in file named  "IRA.mat"')
+            disp('Model saved as "IRA.mat"')
         end
     elseif load_hyper == 1
         Prior = load('IRA.mat');
@@ -984,8 +991,8 @@ if Model == 5
     disp('===========================================================================================================');
     disp('Model: Impulse-Response Analysis')
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp(['Maximum lag length : ' num2str(p)])
-    disp(['Length of Impulse-Response-Analysis : ' num2str(mlag)])
+    disp(['Maximum lag length: ' num2str(p)])
+    disp(['Length of impulse-response analysis: ' num2str(mlag)])
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     if restriction == 1
         disp('Restriction for Identification: Recursive Restrictions')
@@ -997,7 +1004,7 @@ if Model == 5
         disp(['Restriction for Identification: res_index  = [' num2str(resindex') ']'])
     end
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter:')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[Phi(1) Phi(2) ... Phi(p)] = ')
     disp(reshape(b0,p*k,k)');
@@ -1009,15 +1016,15 @@ if Model == 5
     disp(R0)
     disp('-----------------------------------------------------------------------------------------------------------');
     if ML == 'Y'
-        disp(['Log Marginal Likelihood: ' num2str(lnML) '(Laplace Method)'])
+        disp(['Log marginal likelihood: ' num2str(lnML) ' (Laplace method)'])
     end
     max_ineff = max([postmom_B(:,7);postmom_Gamma(:,7)]);
     min_p = min([postmom_B(:,8);postmom_Gamma(:,8)]);
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('     nth column      Estimates     S.E.        2.5%        50%        97.5%       Ineff     Geweke-p °ª');
+    disp('     nth column      Estimates     S.E.        2.5%        50%        97.5%       Ineff     Geweke p');
     disp('===========================================================================================================');
     ind_Gamma = 1:(k^2);
     ind_Gamma = ind_Gamma';
@@ -1025,7 +1032,7 @@ if Model == 5
     r = [0; r(1:end - 1)] + 1;
     c(c == 0) = k;
     ind_Gamma =[c r];
-    disp('The element of B :')
+    disp('Elements of B:')
     for i = 1:(k^2)
         disp(['         B ' num2str(ind_Gamma(i,:)) '      ' num2str([postmom_B(i,2) postmom_B(i,3) postmom_B(i,4) postmom_B(i,5) postmom_B(i,6) postmom_B(i,7) postmom_B(i,8)])]);
     end
@@ -1038,7 +1045,7 @@ if Model == 5
     ind_Gamma =[c r];
     for i = 1:p
         postmom_Gamma_p = postmom_Gamma((k^2)*(i-1) + 1: (k^2)*i,:);
-        disp(['The element of Gamma(lag = ' num2str(i) ') :'])
+        disp(['Elements of Gamma (lag = ' num2str(i) '):'])
         for j = 1:(k^2)
             disp(['     Gamma ' num2str(ind_Gamma(j,:)) '     ' num2str([postmom_Gamma_p(j,2) postmom_Gamma_p(j,3) postmom_Gamma_p(j,4) postmom_Gamma_p(j,5) postmom_Gamma_p(j,6) postmom_Gamma_p(j,7) postmom_Gamma_p(j,8)])]);
         end
@@ -1046,7 +1053,7 @@ if Model == 5
     end
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named  "IRA.mat"')
+        disp('Model saved as "IRA.mat"')
     end
     Plot_IRF(ImpulseRespm,postmom_B);
     Plot_accumul_IRF(ImpulseRespm,postmom_B);
@@ -1059,10 +1066,10 @@ if Model == 6
     test = isempty(exist);
     if test == 0
         disp(' ')
-        disp('"MSM.mat" is founded"')
-        disp('Do you want to use the model in "MSM.mat" ?')
+        disp('"MSM.mat" was found.')
+        disp('Do you want to use the model saved in "MSM.mat"?')
         disp(' ')
-        load_hyper = input('type Y or N : ','s');
+        load_hyper = input('Type Y or N: ','s');
         if load_hyper == 'Y'
             load_hyper = 1;
         elseif load_hyper == 'N'
@@ -1078,7 +1085,7 @@ if Model == 6
         disp('Model: Markov Switching Model')
         disp('=============================================')
         disp(' ')
-        disp('[Data generating Process]')
+        disp('[Data Generating Process]')
         disp(' ')
         disp('y_t | beta(s_t), sig2(s_t), s_t ~ Normal(x_t*beta(s_t), sig2(s_t))')
         disp('s_t ~ Markov(s_0, P)')
@@ -1093,9 +1100,9 @@ if Model == 6
         disp('(parameter = a0*ones(1,s).')
         disp('(After that, parameter(1,s_t) = a1)')
         disp(' ')
-        disp('k: Number of regressor')
+        disp('k: Number of regressors')
         disp(' ')
-        disp('What column in the data matrix is the dependent variable?')
+        disp('Which column in the data matrix is the dependent variable?')
         disp(' ')
         
         x = input(' ');
@@ -1109,18 +1116,18 @@ if Model == 6
         k_reg = cols(X);
         disp(' ')
         disp('=============================================')
-        disp('Choose specific Model: ')
+        disp('Choose a specific model:')
         disp(' ')
         disp('1. Only beta is switching')
         disp('2. Only sig2 is switching')
         disp('3. Both beta and sig2 are switching')
         disp('=============================================')
         disp(' ')
-        switchingind = input('Type number: ');
+        switchingind = input('Type a number: ');
         disp(' ')
         if switchingind == 1
-            disp('Do you want to analyze data with Change-point model?')
-            change_model = input('type Y or N : ','s');
+            disp('Do you want to analyze the data with a change-point model?')
+            change_model = input('Type Y or N: ','s');
             disp(' ')
             if change_model == 'Y'
                 idenind = 3;
@@ -1128,8 +1135,8 @@ if Model == 6
                 idenind = 1;
             end
         elseif switchingind == 2
-            disp('Do you want to analyze data with Change-point model?')
-            change_model = input('type Y or N : ','s');
+            disp('Do you want to analyze the data with a change-point model?')
+            change_model = input('Type Y or N: ','s');
             disp(' ')
             if change_model == 'Y'
                 idenind = 3;
@@ -1137,15 +1144,15 @@ if Model == 6
                 idenind = 2;
             end
         elseif switchingind == 3
-            disp('Do you want to analyze data with Change-point model?')
-            change_model = input('type Y or N : ','s');
+            disp('Do you want to analyze the data with a change-point model?')
+            change_model = input('Type Y or N: ','s');
             disp(' ')
             if change_model == 'Y'
                 idenind = 3;
             elseif change_model == 'N'
-                disp('Which variables would you lke based on to identify the state?')
+                disp('Which variable should be used to identify the state?')
                 disp('1. beta, 2. sig2')
-                idenind = input('type 1 or 2 : ');
+                idenind = input('Type 1 or 2: ');
             end
         end
         
@@ -1155,23 +1162,23 @@ if Model == 6
             disp('As the state number increases, the LC*beta value also increases.')
             disp(' ')
             disp('What is LC?')
-            LC = input(['LC : 1 by ' num2str(k_reg) ' = ']);
+            LC = input(['LC: 1 by ' num2str(k_reg) ' = ']);
         else
             LC = zeros(1,k_reg);
         end
         disp(' ')
         disp('What is the lower bound of the share of each state?')
-        lowerbound = input('0 <= lower bound <= 1 : ');
+        lowerbound = input('0 <= lower bound <= 1: ');
         disp(' ')
-        disp('Enter the Hyper-parameter according to the following form.')
+        disp('Enter the hyperparameters in the following form.')
         disp(' ')
-        disp('s_n : Number of states the researcher thinks')
+        disp('s_n: Number of states')
         disp(' ')
-        s = input('What is s_n : ');
+        s = input('s_n: ');
         if switchingind == 1 || switchingind == 3
             
-            disp('beta0_Matrix = [beta0(s_1) beta0(s_2) ... beta0(s_n)]')
-            beta0 = input(['beta0_Matrix: ' num2str(k_reg) ' by ' num2str(s) ' = ']);
+            disp('beta0_matrix = [beta0(s_1) beta0(s_2) ... beta0(s_n)]')
+            beta0 = input(['beta0_matrix: ' num2str(k_reg) ' by ' num2str(s) ' = ']);
             B0 = input(['B0: ' num2str(k_reg) ' by ' num2str(k_reg) ' = ']);
             disp(' ')
         elseif switchingind == 2
@@ -1180,50 +1187,50 @@ if Model == 6
             disp(' ')
         end
         if switchingind == 2 || switchingind == 3
-            disp('alpha0_vector = [alpha0(s_1); alpha0(s_2); ... ;alpha0(s_n)')
-            disp('delta0_vector = [delta0(s_1); delta0(s_2); ... ;delta0(s_n)')
+            disp('alpha0_vector = [alpha0(s_1); alpha0(s_2); ... ; alpha0(s_n)]')
+            disp('delta0_vector = [delta0(s_1); delta0(s_2); ... ; delta0(s_n)]')
             alpha0 = input(['alpha0_vector: ' num2str(s) ' by 1 = ']);
             delta0 = input(['delta0_vector: ' num2str(s) ' by 1 = ']);
             disp(' ')
         elseif switchingind == 1
-            alpha0 = input('alpha0 : scalar = ');
-            delta0 = input('delta0 : scalar = ');
+            alpha0 = input('alpha0: scalar = ');
+            delta0 = input('delta0: scalar = ');
             disp(' ')
         end
         a0 = input('a0: scalar = ');
         a1 = input('a1: scalar = ');
         disp(' ')
-        disp('Enter the simulation size according to the following form.')
+        disp('Enter the simulation size in the following form.')
         disp('Note: Simulation size = burn-in size + sampling size')
         disp(' ')
         n = input('[burn-in size, sampling size]= ');
         disp(' ')
         disp('Do you want to forecast?')
         disp(' ')
-        forecast = input('type Y or N : ','s');
+        forecast = input('Type Y or N: ','s');
         disp(' ')
         if forecast == 'Y'
-            disp('What are the regressor values to be used in the forecast?')
+            disp('What regressor values should be used for the forecast?')
             disp(' ')
-            x_f = input(['column vector : ' num2str(k_reg) ' by 1 = ']);
+            x_f = input(['column vector: ' num2str(k_reg) ' by 1 = ']);
         else
             x_f = [ ];
         end
         disp(' ')
-        disp('Would you like to calculate Marginal Likelihood(Laplace Method)')
+        disp('Would you like to calculate the marginal likelihood (Laplace method)?')
         disp(' ')
-        ML = input('type Y or N : ','s');
+        ML = input('Type Y or N: ','s');
         disp(' ')
-        disp('Do you want to save your model into "MSM.mat" ?')
+        disp('Do you want to save your model as "MSM.mat"?')
         disp(' ')
-        save_mat = input('type Y or N : ','s');
+        save_mat = input('Type Y or N: ','s');
         if save_mat == 'Y'
             help_switchingind = '1:switch beta, 2:switch sig2, 3:switch beta&sig2 both';
             help_idenind = 'Idenfy state by 1:beta, 2:sig2, 3:Change-point model';
             save('MSM.mat','s','x','switchingind', 'idenind' ,'LC','lowerbound','n','forecast','x_f', ...
                 'beta0','B0','alpha0','delta0','a0','a1','help_switchingind','help_idenind','ML');
             disp(' ')
-            disp('Model is stored in file named  "MSM.mat"')
+            disp('Model saved as "MSM.mat"')
         end
     elseif load_hyper == 1
         Prior = load('MSM.mat');
@@ -1281,11 +1288,11 @@ if Model == 6
     disp('-----------------------------------------------------------------------------------------------------------');
     disp('[Specific Model]')
     if switchingind == 1
-        disp('The beta depends on the regime.')
+        disp('beta depends on the regime.')
     elseif switchingind == 2
-        disp('The sig2 depends on the regime.')
+        disp('sig2 depends on the regime.')
     elseif switchingind == 3
-        disp('The beta and sig2 depends on the regime.')
+        disp('Both beta and sig2 depend on the regime.')
     end
     disp(' ')
     disp('[Identification constraints]')
@@ -1294,14 +1301,14 @@ if Model == 6
     elseif idenind == 2
         disp('As the state number increases, the sig2 also increases.')
     elseif idenind == 3
-        disp('Change-point Model')
+        disp('Change-point model')
     end
     disp(' ')
     disp(['The dependent variable is the ' num2str(yind) 'th column of data.'])
     disp(['The share of each state is restricted to greater than ' num2str(lowerbound*100) '%.'])
     disp(['Simulation size: n0= ' num2str(n(1,1)) ', n1= ' num2str(n(1,2))])
     disp('-----------------------------------------------------------------------------------------------------------');
-    disp('Hyper Parameter:')
+    disp('Hyperparameters: ')
     disp(' ')
     disp('[b0 B0] = ')
     disp([beta0 B0]);
@@ -1311,15 +1318,15 @@ if Model == 6
     disp([a0 a1]);
     disp('-----------------------------------------------------------------------------------------------------------');
     if ML == 'Y'
-        disp(['Log Marginal Likelihood: ' num2str(lnML) '(Laplace Method)'])
+        disp(['Log marginal likelihood: ' num2str(lnML) ' (Laplace method)'])
     end
     max_ineff = max(postmom(:,7));
     min_p = min(postmom(:,8));
     disp(['Maximum Inefficiency Factor: ' num2str(max_ineff)])
     disp(['Effective Simulation Size: ' num2str(n(1,2)/max_ineff)])
-    disp(['Minimum Geweke p -value: ' num2str(min_p)])
+    disp(['Minimum Geweke p-value: ' num2str(min_p)])
     disp('===========================================================================================================');
-    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff     Geweke-p °ª');
+    disp('   nth column     Estimates     S.E.        2.5%        50%        97.5%       Ineff     Geweke p');
     disp('===========================================================================================================');
     for i = 1:s
         disp(['[State ' num2str(i) ']'])
@@ -1329,7 +1336,7 @@ if Model == 6
         disp(['         sig2      ' num2str(result(k*s+i,:))])
         disp(' ')
     end
-    disp('-------------------------------------------Transition Prob.------------------------------------------------');
+    disp('-------------------------------------------Transition probabilities------------------------------------------------');
     ind_P = 1:(s^2);
     ind_P = ind_P';
     [r, c] = minresid(ind_P,s);
@@ -1340,7 +1347,7 @@ if Model == 6
     end
     disp('===========================================================================================================');
     if save_mat == 'Y'
-        disp('Model is stored in file named  "MSM.mat"')
+        disp('Model saved as "MSM.mat"')
     end
     
     if idenind == 3
